@@ -1,0 +1,184 @@
+body{
+    font-family:Arial,'微软雅黑';
+}
+.navbar-default .navbar-brand {
+    font-family:'Ruda', sans-serif;
+    color:#337ab7;
+    font-size:30px;
+    font-weight:600;
+}
+.navbar-default .navbar-nav>li>a
+{
+    font-family:"Lato", "Heiti SC", "Hiragino Sans GB", "STHeiti", "Source Han Sans CN", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "微软雅黑", sans-serif;
+    color:#337ab7;
+    font-size:20px;
+    font-weight:500;
+}
+.navbar
+{
+    margin-bottom:0px;
+}
+.navbar-brand
+{
+    line-height:30px;
+}
+.navbar-nav>li>a
+{
+    line-height:30px;
+}
+.carousel .item img
+{
+    height:580px;
+}
+.down-arrow
+{
+    position:absolute;
+    width:43px;
+    height:28px;
+    left:47.5%;
+    bottom:20px;
+}
+.carousel-caption
+{
+    display:block;
+    vertical-align:middle;
+    width:400px;
+    height:200px;
+    left:50%;
+    top:50%;
+    margin:-100px 0 0 -200px;
+}
+.carousel-caption p
+{
+    font-size:25px;
+}
+#index_2
+{
+    width:100%;
+    transition:all 0.2s ease-in-out;
+}
+#slide
+{
+    height:28px;
+    width:43px;
+}
+#guide
+{
+    margin:0 200px 0 200px;
+    font-size:20px;
+    font-weight:600;
+}
+#about
+{
+    height:500px;
+    background-color:#ffcccc;
+    position:relative;
+    display:block;
+    border-bottom:1px solid black;
+}
+#active
+{
+    height:500px;
+    background-color:#ccff99;
+    position:relative;
+    border-bottom:1px solid black;
+}
+#project
+{
+    height:500px;
+    background-color:#ccffff;
+    position:relative;
+    border-bottom:1px solid black;
+}
+#q_a
+{
+    height:500px;
+    background-color:#cc66ff;
+    position:relative;
+    border-bottom:1px solid black;
+}
+#contact
+{
+    height:500px;
+    background-color:#d8d8d8;
+    position:relative;
+    border-bottom:1px solid black;
+}
+.top
+{
+    padding-top:10px;
+    right:20px;
+    bottom:15px;
+    position:absolute;
+    color:#bfbfbf;
+    font-weight:600;
+    font-size:15px;
+}
+.next
+{
+    background:url(../picture/index-next.jpg);
+    height:27px;
+    left:50%;
+    margin-left:-40px;
+    position:absolute;
+    top:0px;
+    width:80px;
+}
+/*只在小屏幕显示*/
+@media screen and (max-width:768px)
+{
+    .carousel .item img{
+    height:250px;
+    }
+    .carousel-caption h1
+    {
+    font-size:14px;
+    }
+    .carousel-caption p
+    {
+    font-size:14px;
+    }
+    .carousel-caption
+    {
+    margin:-50px 0 0 -190px; 
+    }
+    #nav_2
+    {
+    height:18px;
+    width:22px;
+    margin:0 0 0 12px;
+    bottom:10px;
+    }
+    #nav
+    {
+    font-size:25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

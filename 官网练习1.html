@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>首页练习</title>
+        <meta charset="utf-8">
+        <link href="css/bootstrap.min.css" rel=stylesheet>
+        <link href="css/index.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+       <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                    <a href="example1.html" class="navbar-brand" id="nav">ThoughtCoding实验室</a>
+                </div>
+  <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
+    	            <ul class="nav navbar-nav">
+                        <li class="active"><a href="##">主页</a></li>
+      		            <li><a href="/">动态</a></li>
+                        <li><a href="/">项目</a></li>
+                        <li><a href="/">关于</a></li>
+                        <li><a href="/">校友录</a></li>
+                        <li><a href="/">加入我们</a></li>
+      	            </ul>
+                </div>
+                </div>
+            </div>
+        </header>
+      <!--轮播图-->
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner" role="listbox">
+             <div class="item active">
+                 <img class="img-responsive" src="picture/index_1.jpg" alt="西安邮电大学" width="100%" height="100%">
+                 <div class="carousel-caption">
+                     <h1>我们的理念</h1>
+                     <p>技术改变生活，奋斗共享价值</p>
+                 </div>
+             </div>
+             <div class="item">
+                 <img class="img-responsive" src="picture/index_2.jpg" alt="西安邮电大学" width="100%" height="100%">
+             </div>
+             <div class="item">
+                 <img class="img-responsive" src="picture/index_3.jpg" alt="西安邮电大学" width="100%" height="100%">
+             </div>
+         </div>
+         <!-- Controls -->
+         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left"></span>
+         </a>
+         <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right"></span>
+         </a>
+         <a href="#index_2" id="slide">
+            <img id="nav_2" class="down-arrow" src="picture/bitmap.jpg">
+         </a>
+    </div>
+    <!--轮播图结束-->
+    <!--引导区-->
+    <div id="index_2">
+        <div id="guide">
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation"><a href="#about">About</a></li>
+                <li role="presentation"><a href="#active">Active</a></li>
+                <li role="presentation"><a href="#project">Project</a></li>
+                <li role="presentation"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--引导区结束-->
+    <!--关于-->
+    <div id="about">
+       <a class="top"><img src="picture/index-top.jpg"><br>TOP</a>
+    </div>
+    <!--关于结束-->
+    <!--活动-->
+    <div id="active">
+        <a class="top"><img src="picture/index-top.jpg"><br>TOP</a>
+        <a href="#project" class="next"></a>
+    </div>
+    <!--活动结束-->
+    <!--项目-->
+    <div id="project">
+        <a class="top"><img src="picture/index-top.jpg"><br>TOP</a> 
+        <a href="#q_a" class="next"></a>
+    </div>
+    <!--项目结束-->
+    <!--问题-->
+    <div id="q_a">
+        <a class="top"><img src="picture/index-top.jpg"><br>TOP</a> 
+        <a href="#contact" class="next"></a>
+    </div>
+    <!--问题结束-->
+     <!--联系-->
+    <div id="contact">
+        <a class="top"><img src="picture/index-top.jpg"><br>TOP</a> 
+    </div>
+    <!--联系结束-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="scripts/addLoadEvent().js"></script>
+    <script src="js/index.js"></script>
+    </body>
+</html>
