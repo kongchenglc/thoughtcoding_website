@@ -1,15 +1,17 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>首页练习</title>
-        <meta charset="utf-8">
-        <link href="css/bootstrap.min.css" rel=stylesheet>
-        <link href="css/index.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="navbar navbar-default" role="navigation">
-                <div class="container">
+
+<head>
+    <title>首页练习</title>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel=stylesheet>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                         <span class="sr-only">Toggle Navigation</span>
@@ -17,95 +19,171 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-       <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                    <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
                     <a href="example1.html" class="navbar-brand" id="nav">ThoughtCoding实验室</a>
                 </div>
-  <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+                <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
                 <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
-    	            <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav">
                         <li class="active"><a href="##">主页</a></li>
-      		            <li><a href="/">动态</a></li>
+                        <li><a href="/">动态</a></li>
                         <li><a href="/">项目</a></li>
                         <li><a href="/">关于</a></li>
                         <li><a href="/">校友录</a></li>
                         <li><a href="/">加入我们</a></li>
-      	            </ul>
-                </div>
+                    </ul>
                 </div>
             </div>
-        </header>
-      <!--轮播图-->
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-         <div class="carousel-inner" role="listbox">
-             <div class="item active">
-                 <img class="img-responsive" src="picture/index_1.jpg" alt="西安邮电大学" width="100%" height="100%">
-                 <div class="carousel-caption">
-                     <h1>我们的理念</h1>
-                     <p>技术改变生活，奋斗共享价值</p>
-                 </div>
-             </div>
-             <div class="item">
-                 <img class="img-responsive" src="picture/index_2.jpg" alt="西安邮电大学" width="100%" height="100%">
-             </div>
-             <div class="item">
-                 <img class="img-responsive" src="picture/index_3.jpg" alt="西安邮电大学" width="100%" height="100%">
-             </div>
-         </div>
-         <!-- Controls -->
-         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-             <span class="glyphicon glyphicon-chevron-left"></span>
-         </a>
-         <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-             <span class="glyphicon glyphicon-chevron-right"></span>
-         </a>
-         <a href="#index_2" id="slide">
+        </div>
+    </header>
+    <!--轮播图-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="img-responsive" src="picture/index_1.jpg" alt="西安邮电大学" width="100%" height="100%">
+                <div class="carousel-caption">
+                    <h1>我们的理念</h1>
+                    <p>技术改变生活，奋斗共享价值</p>
+                </div>
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="picture/index_2.jpg" alt="西安邮电大学" width="100%" height="100%">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="picture/index_3.jpg" alt="西安邮电大学" width="100%" height="100%">
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <a href="#guide" id="slide">
             <img id="nav_2" class="down-arrow" src="picture/bitmap.jpg">
-         </a>
+        </a>
     </div>
     <!--轮播图结束-->
     <!--引导区-->
-    <div id="index_2">
-        <div id="guide">
-            <ul class="nav nav-tabs nav-justified">
-                <li role="presentation"><a href="#about">About</a></li>
-                <li role="presentation"><a href="#active">Active</a></li>
-                <li role="presentation"><a href="#project">Project</a></li>
-                <li role="presentation"><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <div id="guide">
+        <ul class="nav nav-tabs nav-justified">
+            <li role="presentation"><a href="#about">About</a></li>
+            <li role="presentation"><a href="#active">Active</a></li>
+            <li role="presentation"><a href="#project">Project</a></li>
+            <li role="presentation"><a href="#contact">Contact</a></li>
+        </ul>
     </div>
     <!--引导区结束-->
     <!--关于-->
     <div id="about">
-       <a class="top"><img src="picture/index-top.jpg"><br>TOP</a>
+        <div id="index_text">
+            <p id="text_center">ThoughtCoding实验室由若干智能硬件爱好者于2015年4月共同创办。秉承以项目为导向的理念，深入实践。短短数月，在老师的指导下，<br> 通过嵌入式、大数据、安卓、WEB等各个方向的人员共同协作，参加了互联网+、大挑、3S杯、微软创新杯等大赛，并获得出色的成绩。同时有若干项目已经进驻西邮创业孵化基地。
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-md-2 col-lg-2">
+                <img src="picture/index-嵌入式.png">
+            </div>
+            <div class="col-sm-2 col-md-3 col-lg-3 text">
+                <p>嵌入式开发小组</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-sm-3 col-md-2 col-lg-2">
+                <img src="picture/index-android.png">
+            </div>
+            <div class="col-sm-2 col-md-3 col-lg-3 text">
+                <p>Android开发小组</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-md-2 col-lg-2">
+                <img src="picture/index-大数据.png">
+            </div>
+            <div class="col-sm-2 col-md-3 col-lg-3 text">
+                <p>大数据开发小组</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-sm-3 col-md-2 col-lg-2">
+                <img src="picture/index-html5.png">
+            </div>
+            <div class="col-sm-2 col-md-3 col-lg-3 text">
+                <p>web开发小组</p>
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
+    </div>
     </div>
     <!--关于结束-->
     <!--活动-->
     <div id="active">
-        <a class="top"><img src="picture/index-top.jpg"><br>TOP</a>
         <a href="#project" class="next"></a>
+        <div id="github">
+            <img src="picture/index-github.png">
+            <h2>项目平台</h2><b>在github上fork我们的开放项目</b>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td class="tablehead">标题</td>
+                        <td>github内容</td>
+                        <td>网址</td>
+                    </tr>
+                    <tr>
+                        <td class="tablehead">标题</td>
+                        <td>github内容</td>
+                        <td>网址</td>
+                    </tr>
+                    <tr>
+                        <td class="tablehead">标题</td>
+                        <td>github内容</td>
+                        <td>网址</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="salon">
+            <img src="picture/index-salon.png">
+            <h2>技术交流</h2><b>来参加我们的学习沙龙吧~</b>
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td class="tablehead">标题与内容</td>
+                        <td>主讲人</td>
+                        <td>时间</td>
+                        <td>地址</td>
+                    </tr>
+                    <tr>
+                        <td class="tablehead">标题与内容</td>
+                        <td>主讲人</td>
+                        <td>时间</td>
+                        <td>地址</td>
+                    </tr>
+                    <tr>
+                        <td class="tablehead">标题与内容</td>
+                        <td>主讲人</td>
+                        <td>时间</td>
+                        <td>地址</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <!--活动结束-->
     <!--项目-->
     <div id="project">
-        <a class="top"><img src="picture/index-top.jpg"><br>TOP</a> 
         <a href="#q_a" class="next"></a>
     </div>
     <!--项目结束-->
-    <!--问题-->
-    <div id="q_a">
-        <a class="top"><img src="picture/index-top.jpg"><br>TOP</a> 
-        <a href="#contact" class="next"></a>
-    </div>
-    <!--问题结束-->
-     <!--联系-->
+    <!--联系-->
     <div id="contact">
-        <a class="top"><img src="picture/index-top.jpg"><br>TOP</a> 
     </div>
     <!--联系结束-->
+    <a id="top"><img src="picture/index-top.jpg"><br>TOP</a>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="scripts/addLoadEvent().js"></script>
+    <script src="js/addLoadEvent().js"></script>
     <script src="js/index.js"></script>
-    </body>
+</body>
+
 </html>
