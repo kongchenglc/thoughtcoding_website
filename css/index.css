@@ -62,13 +62,20 @@ body {
 
 #guide {
     display: block;
-    border-radius: 15px;
     margin: 0 200px 0 200px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    background-color: #D0D0D0;
+    background-color: #F0F0F0;
 }
-
+#guide a {
+    padding: 5px 0;
+    display: block;
+    border: 0.5px solid #D0D0D0;
+}
+#guide a:hover
+{
+    background-color: #9C4E4E;
+}
 #about {
     position: relative;
     display: block;
