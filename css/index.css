@@ -1,6 +1,6 @@
 body {
     font-family: Arial, '微软雅黑';
-    background-color: #F0F0F0;
+    background:url(../picture/background.png);
 }
 
 .navbar-default .navbar-brand {
@@ -62,42 +62,48 @@ body {
 
 #guide {
     display: block;
-    margin: 0 200px 0 200px;
+    margin: 0;
     font-size: 16px;
     font-weight: 600;
-    background-color: #F0F0F0;
+    background-color: #485661;
+    opacity: 0.98;
+}
+#guide ul
+{
+  padding: 0 150px;
 }
 #guide a {
-    padding: 5px 0;
-    display: block;
-    border: 0.5px solid #D0D0D0;
+    padding:8px 0;
+    color: #D8D8D8;
+    border: 0;
+    border-radius: 0;
 }
 #guide a:hover
 {
-    background-color: #9C4E4E;
+    border: 0;
+    background-color:#5a6771;
+    color: white;
 }
 #about {
     position: relative;
-    display: block;
     border-bottom: 1px solid black;
     height: 100vh;
 }
 
 #active {
-    height: 500px;
     position: relative;
     border-bottom: 1px solid black;
     height: 100vh;
 }
 
 #project {
-    height: 500px;
+    height: 100vh;
     position: relative;
     border-bottom: 1px solid black;
 }
 
 #contact {
-    height: 500px;
+    height: 100vh;
     position: relative;
     border-bottom: 1px solid black;
 }
