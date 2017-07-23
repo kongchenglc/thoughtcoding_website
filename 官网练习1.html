@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <div class="navbar navbar-default" role="navigation">
+        <div id="index_nav" class="navbar navbar-default .navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -20,12 +20,12 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
-                    <a href="example1.html" class="navbar-brand" id="nav">ThoughtCoding实验室</a>
+                    <a id="head" href="example1.html" class="navbar-brand" id="nav">ThoughtCoding实验室</a>
                 </div>
                 <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
                 <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="##">主页</a></li>
+                        <li class="in"><a href="##">主页</a></li>
                         <li><a href="/">动态</a></li>
                         <li><a href="/">项目</a></li>
                         <li><a href="/">关于</a></li>
@@ -68,50 +68,48 @@
     <!--引导区-->
     <div id="guide">
         <ul class="nav nav-tabs nav-justified">
-            <li role="presentation"><a href="#about">About</a></li>
-            <li role="presentation"><a href="#active">Active</a></li>
-            <li role="presentation"><a href="#project">Project</a></li>
-            <li role="presentation"><a href="#contact">Contact</a></li>
+            <li role="presentation"><a href="/">主页</a></li>
+            <li role="presentation"><a href="/">动态</a></li>
+            <li role="presentation"><a href="/">项目</a></li>
+            <li role="presentation"><a href="/">关于</a></li>
+            <li role="presentation"><a href="/">校友录</a></li>
+            <li role="presentation"><a href="/">加入我们</a></li>
         </ul>
     </div>
     <!--引导区结束-->
     <!--关于-->
     <div id="about">
-        <div id="index_text">
-            <p id="text_center">ThoughtCoding实验室由若干智能硬件爱好者于2015年4月共同创办。秉承以项目为导向的理念，深入实践。短短数月，在老师的指导下，<br> 通过嵌入式、大数据、安卓、WEB等各个方向的人员共同协作，参加了互联网+、大挑、3S杯、微软创新杯等大赛，并获得出色的成绩。同时有若干项目已经进驻西邮创业孵化基地。
+        <div class="index_text">
+            <h2>About Us</h2>
+            <p class="text_center">ThoughtCoding实验室由若干智能硬件爱好者于2015年4月共同创办。秉承以项目为导向的理念，深入实践。短短数月，在老师的指导下，<br> 通过嵌入式、大数据、安卓、WEB等各个方向的人员共同协作，参加了互联网+、大挑、3S杯、微软创新杯等大赛，并获得出色的成绩。同时有若干项目已经进驻西邮创业孵化基地。
             </p>
         </div>
         <div class="row">
-            <div class="col-sm-3 col-md-2 col-lg-2">
-                <img src="picture/index-嵌入式.png">
+            <div class="col-sm-5 col-md-5 col-lg-5" style="margin-top:40px;">
+                <div id="嵌入式">qianrushi</div>
+                <div id="android">qianrushi</div>
+                <div id="web">qianrushi</div>
+                <div id="大数据">qianrushi</div>
             </div>
-            <div class="col-sm-2 col-md-3 col-lg-3 text">
-                <p>嵌入式开发小组</p>
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <div class="row img1">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div id="嵌入式1"></div>
+                        <p class="img">嵌入式开发小组</p>
+                        <div id="大数据1"></div>
+                        <p class="img">大数据开发小组</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div id="android1"></div>
+                        <p class="img">android开发小组</p>
+                        <div id="web1"></div>
+                        <p class="img">web开发小组</p>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
-            <div class="col-sm-3 col-md-2 col-lg-2">
-                <img src="picture/index-android.png">
-            </div>
-            <div class="col-sm-2 col-md-3 col-lg-3 text">
-                <p>Android开发小组</p>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 col-md-2 col-lg-2">
-                <img src="picture/index-大数据.png">
-            </div>
-            <div class="col-sm-2 col-md-3 col-lg-3 text">
-                <p>大数据开发小组</p>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
-            <div class="col-sm-3 col-md-2 col-lg-2">
-                <img src="picture/index-html5.png">
-            </div>
-            <div class="col-sm-2 col-md-3 col-lg-3 text">
-                <p>web开发小组</p>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
         </div>
     </div>
     </div>
@@ -119,62 +117,24 @@
     <!--活动-->
     <div id="active">
         <a href="#project" class="next"></a>
-        <div id="github">
-            <img src="picture/index-github.png">
-            <h2>项目平台</h2><b>在github上fork我们的开放项目</b>
-            <table class="table table-striped">
-                <tbody>
-                    <tr>
-                        <td class="tablehead">标题</td>
-                        <td>github内容</td>
-                        <td>网址</td>
-                    </tr>
-                    <tr>
-                        <td class="tablehead">标题</td>
-                        <td>github内容</td>
-                        <td>网址</td>
-                    </tr>
-                    <tr>
-                        <td class="tablehead">标题</td>
-                        <td>github内容</td>
-                        <td>网址</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="index_text">
+            <h2>News</h2>
+            <p class="text_center">ThoughtCoding实验室由若干智能硬件爱好者于2015年4月共同创办。秉承以项目为导向的理念，深入实践。短短数月，在老师的指导下，<br> 通过嵌入式、大数据、安卓、WEB等各个方向的人员共同协作，参加了互联网+、大挑、3S杯、微软创新杯等大赛，并获得出色的成绩。同时有若干项目已经进驻西邮创业孵化基地。
+            </p>
         </div>
-        <div id="salon">
-            <img src="picture/index-salon.png">
-            <h2>技术交流</h2><b>来参加我们的学习沙龙吧~</b>
-            <table class="table table-striped">
-                <tbody>
-                    <tr>
-                        <td class="tablehead">标题与内容</td>
-                        <td>主讲人</td>
-                        <td>时间</td>
-                        <td>地址</td>
-                    </tr>
-                    <tr>
-                        <td class="tablehead">标题与内容</td>
-                        <td>主讲人</td>
-                        <td>时间</td>
-                        <td>地址</td>
-                    </tr>
-                    <tr>
-                        <td class="tablehead">标题与内容</td>
-                        <td>主讲人</td>
-                        <td>时间</td>
-                        <td>地址</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="row">
+            <div id="github" class="col-sm-3 col-md-3 col-lg-3">
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+            <div id="salon" class="col-sm-3 col-md-3 col-lg-3">
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+            <div id="project" class="col-sm-3 col-md-3 col-lg-3">
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
         </div>
     </div>
     <!--活动结束-->
-    <!--项目-->
-    <div id="project">
-        <a href="#q_a" class="next"></a>
-    </div>
-    <!--项目结束-->
     <!--联系-->
     <div id="contact">
     </div>

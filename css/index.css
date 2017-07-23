@@ -1,20 +1,34 @@
 body {
     font-family: Arial, '微软雅黑';
-    background:url(../picture/background.png);
 }
 
 .navbar-default .navbar-brand {
     font-family: 'Ruda', sans-serif;
-    color: #337ab7;
+    color: black;
     font-size: 30px;
     font-weight: 600;
 }
 
 .navbar-default .navbar-nav>li>a {
     font-family: "Lato", "Heiti SC", "Hiragino Sans GB", "STHeiti", "Source Han Sans CN", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "微软雅黑", sans-serif;
-    color: #337ab7;
+    color: black;
     font-size: 20px;
     font-weight: 500;
+    transition: all 0.4s ease;
+    display: block;
+    padding: 10px 0;
+    line-height: 20px;
+    margin: 10px 20px;
+    border-bottom: 1px none #0dc5a0;
+}
+
+.in {
+    background-color: #E0E0E0;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #0dc5a0;
+    border-bottom: 1px solid #0dc5a0;
 }
 
 .navbar {
@@ -25,7 +39,7 @@ body {
     line-height: 30px;
 }
 
-.navbar-nav>li>a {
+.navbar-nav>li {
     line-height: 30px;
 }
 
@@ -63,49 +77,48 @@ body {
 #guide {
     display: block;
     margin: 0;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-    background-color: #485661;
+    background-color: #323436;
     opacity: 0.98;
 }
-#guide ul
-{
-  padding: 0 150px;
+
+#guide ul {
+    padding: 0 150px;
 }
+
 #guide a {
-    padding:8px 0;
-    color: #D8D8D8;
+    padding: 12px 0;
+    color: #B0B0B0;
     border: 0;
     border-radius: 0;
 }
-#guide a:hover
-{
+
+#guide a:hover {
     border: 0;
-    background-color:#5a6771;
+    background-color: #323436;
     color: white;
 }
+
 #about {
     position: relative;
-    border-bottom: 1px solid black;
     height: 100vh;
 }
 
 #active {
     position: relative;
-    border-bottom: 1px solid black;
     height: 100vh;
+    background-color: #0dc5a0;
 }
 
 #project {
     height: 100vh;
     position: relative;
-    border-bottom: 1px solid black;
 }
 
 #contact {
     height: 100vh;
     position: relative;
-    border-bottom: 1px solid black;
 }
 
 #top {
@@ -129,26 +142,86 @@ body {
     width: 80px;
 }
 
-#index_text {
-    margin: 0 auto;
+.index_text {
     text-align: center;
     line-height: 30px;
     padding-top: 80px;
-    padding-bottom: 20px;
+    margin-bottom: -20px;
+}
+
+.text_center {
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
 }
 
 .row {
     padding: 50px 150px;
 }
 
-.row img {
-    float: left;
+#嵌入式 {
+    background-color: #3498db;
+    height: 35px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 3px;
+    color: white;
 }
 
-#text_center {
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 30px;
+#大数据 {
+    background-color: #7e57c2;
+    height: 35px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 3px;
+    color: white;
+}
+
+#android {
+    background-color: #0dc5a0;
+    height: 35px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 3px;
+    color: white;
+}
+
+#web {
+    background-color: #FF6600;
+    height: 35px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 3px;
+    color: white;
+}
+
+#嵌入式1,
+#大数据1,
+#android1,
+#web1 {
+    margin: 0px;
+    height: 96px;
+    width: 96px;
+}
+
+.img1 {
+    padding: 40px;
+}
+
+#嵌入式1 {
+    background-image: url(../picture/index-嵌入式.png);
+}
+
+#大数据1 {
+    background-image: url(../picture/index-大数据.png);
+}
+
+#android1 {
+    background-image: url(../picture/index-android.png);
+}
+
+#web1 {
+    background-image: url(../picture/index-h5.png);
 }
 
 .text {
@@ -157,46 +230,30 @@ body {
     height: 100px;
 }
 
-table {
-    margin: 0;
+.img {
+    padding: 5px 0;
 }
 
 #github {
-    padding: 100px 150px 20px 150px;
+    background-image: url(../picture/github.jpg);
+    height: 200px;
+    width: 200px;
 }
 
 #salon {
-    padding: 100px 150px 20px 150px;
+    background-image: url(../picture/salon.jpg);
+    height: 200px;
+    width: 200px;
 }
 
-#github img {
-    float: right;
-    padding-bottom: 10px;
+#project {
+    background-image: url(../picture/project.jpg);
+    height: 200px;
+    width: 200px;
 }
 
-#salon img {
-    float: right;
-    padding-bottom: 10px;
-}
-
-#github h2 {
-    display: inline;
-}
-
-#salon h2 {
-    display: inline;
-}
-
-#salon b {
-    font-size: 18px;
-    font-weight: 500;
-    padding-left: 20px;
-}
-
-#github b {
-    font-size: 18px;
-    font-weight: 500;
-    padding-left: 20px;
+#active .row {
+    margin: 80px 0;
 }
 
 
@@ -223,5 +280,14 @@ table {
     }
     #nav {
         font-size: 25px;
+    }
+    #嵌入式,
+    #android,
+    #web,
+    #大数据 {
+        width: 20%;
+    }
+    .row .img {
+        font-size: 5px;
     }
 }

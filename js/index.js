@@ -21,16 +21,19 @@ window.onscroll = function() {
     var index_2 = document.getElementById("guide");
     var top = document.getElementById("top");
     if (topScroll > 610) {
+        index_2.style.display = "block";
         index_2.style.position = 'fixed'; //生成绝对定位元素，相对于浏览器窗口进行定位
         index_2.style.top = '0';
         index_2.style.zIndex = '1'; //设置元素堆叠顺序
     } else {
         index_2.style.position = 'static'; //元素正常出现在流中
+        index_2.style.display = "none";
     }
-    if (topScroll != 0)
+    if (topScroll != 0) {
         top.style.display = 'block';
-    else
+    } else {
         top.style.display = 'none';
+    }
 }
 
 function hightrows() {
@@ -50,5 +53,16 @@ function hightrows() {
         }
     }
 }
+/*
+function onmouseactive()
+{
+    var github=document.getElementById("github");
+    var salon=document.getElementById("salon");
+    var project=document.getElementById("project");
+    github.onmouseover=function(){
+
+    }
+}
+*/
 addLoadEvent(slide_top);
 addLoadEvent(hightrows);
