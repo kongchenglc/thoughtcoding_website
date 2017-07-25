@@ -2,14 +2,14 @@ body {
     font-family: Arial, '微软雅黑';
 }
 
-.navbar-default .navbar-brand {
+header .navbar-default .navbar-brand {
     font-family: 'Ruda', sans-serif;
     color: black;
     font-size: 30px;
     font-weight: 600;
 }
 
-.navbar-default .navbar-nav>li>a {
+header .navbar-default .navbar-nav>li>a {
     font-family: "Lato", "Heiti SC", "Hiragino Sans GB", "STHeiti", "Source Han Sans CN", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "微软雅黑", sans-serif;
     color: black;
     font-size: 20px;
@@ -19,27 +19,36 @@ body {
     padding: 10px 0;
     line-height: 20px;
     margin: 10px 20px;
-    border-bottom: 1px none #0dc5a0;
+    border-bottom: 1px solid #f8f8f8;
 }
 
-.in {
+#in {
     background-color: #E0E0E0;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+#in>a {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#in a:hover {
     color: #0dc5a0;
     border-bottom: 1px solid #0dc5a0;
 }
 
-.navbar {
+header .navbar-default .navbar-nav>li>a:hover {
+    color: #0dc5a0;
+    border-bottom: 1px solid #0dc5a0;
+}
+
+header .navbar {
     margin-bottom: 0px;
 }
 
-.navbar-brand {
+header .navbar-brand {
     line-height: 30px;
 }
 
-.navbar-nav>li {
+header .navbar-nav>li {
     line-height: 30px;
 }
 
@@ -75,19 +84,35 @@ body {
 }
 
 #guide {
-    display: block;
+    display: none;
     margin: 0;
     font-size: 15px;
     font-weight: 600;
     background-color: #323436;
     opacity: 0.98;
+    width: 100%;
+}
+
+#guide .navbar {
+    margin: 0px;
+    min-height: 0px;
+}
+
+#guide .container {
+    padding: 0px;
+}
+
+#guide .navbar-collapse {
+    padding: 0px;
 }
 
 #guide ul {
+    background-color: #323436;
     padding: 0 150px;
 }
 
 #guide a {
+    background-color: #323436;
     padding: 12px 0;
     color: #B0B0B0;
     border: 0;
@@ -98,6 +123,15 @@ body {
     border: 0;
     background-color: #323436;
     color: white;
+}
+
+#guide .container {
+    width: 100%;
+}
+
+#guide .navbar-default {
+    background-color: #323436;
+    border: none;
 }
 
 #about {
@@ -111,13 +145,8 @@ body {
     background-color: #0dc5a0;
 }
 
-#project {
-    height: 100vh;
-    position: relative;
-}
-
 #contact {
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 
@@ -147,15 +176,33 @@ body {
     line-height: 30px;
     padding-top: 80px;
     margin-bottom: -20px;
+    font-family: arial, "微软雅黑", "Microsoft YaHei";
+}
+
+#active .index_text {
+    text-align: center;
+    line-height: 30px;
+    padding-top: 80px;
+    margin-bottom: -20px;
+    color: white;
+}
+
+#active .text_center {
+    font-weight: 500;
+}
+
+.index_text h1 {
+    letter-spacing: 1px;
 }
 
 .text_center {
     font-weight: 600;
     font-size: 15px;
     margin-top: 20px;
+    letter-spacing: 1px;
 }
 
-.row {
+.intro {
     padding: 50px 150px;
 }
 
@@ -235,31 +282,213 @@ body {
 }
 
 #github {
-    background-image: url(../picture/github.jpg);
-    height: 200px;
-    width: 200px;
+    background: url(../picture/github.jpg);
 }
 
 #salon {
-    background-image: url(../picture/salon.jpg);
-    height: 200px;
-    width: 200px;
+    background: url(../picture/salon.jpg);
 }
 
 #project {
-    background-image: url(../picture/project.jpg);
-    height: 200px;
-    width: 200px;
+    background: url(../picture/project.jpg);
+}
+
+.row {
+    margin: 0;
 }
 
 #active .row {
-    margin: 80px 0;
+    margin: 100px 220px;
+}
+
+.active_img {
+    height: 200px;
+    width: 200px;
+    margin: 0 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #888888;
+}
+
+.onmouse_slide {
+    position: relative;
+}
+
+.active_content {
+    font-size: 15px;
+    margin: 0 40px;
+    height: 200px;
+    position: absolute;
+    display: none;
+    color: black;
+}
+
+.active_content p {
+    margin: 10px 0px 5px 40px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.active_content li a {
+    display: block;
+    font-weight: 400;
+    margin: 10px 0;
+    color: black;
+}
+
+.active_content li {
+    font-weight: 400;
+}
+
+.active_content {
+    color: black;
+}
+
+#contact .row {
+    padding: 15vh 20vh;
+}
+
+#contact .row h2 {
+    color: #0dc5a0;
+    font-weight: 400;
+    display: inline;
+}
+
+.form-inline {
+    margin: 3vh 0 0 0;
+}
+
+#contact .row h3 {
+    color: #0dc5a0;
+    font-weight: 400;
+    padding: 1vh 0 1vh 0;
+}
+
+#contact .row p {
+    font: 2.3vh/5vh "微软雅黑";
+    border-bottom: 1px dashed black;
+    margin: 2vh 0;
+}
+
+#contact .row textarea {
+    display: block;
+    border-radius: 5px;
+    margin: 2vh 0;
+}
+
+#contact .row input {
+    border-radius: 2px;
+    margin: 2vh 9vh 2vh 0;
+}
+
+.contact_qa {
+    padding-left: 15vh;
+}
+
+#contact #target a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    float: left;
+    height: 5vh;
+    width: 30vh;
+}
+
+#contact #target a:hover {
+    text-decoration: underline;
+    color: #0dc5a0;
+}
+
+#contact img {
+    float: right;
+    position: absolute;
+    top: -1vh;
+}
+
+#建议 {
+    right: 19vh;
+}
+
+#爱心 {
+    right: 3vh;
+}
+
+#contact {
+    height: 75vh;
+    position: relative;
+}
+
+.footer {
+    padding: 2vh 0vh;
+    height: 25vh;
+    background-color: #323436;
+    color: #B0B0B0;
+    font-size: 13px;
+}
+
+.footer a {
+    color: #D0D0D0;
+}
+
+.footer a:hover {
+    color: #0dc5a0;
+}
+
+.footer .footer_last {
+    text-align: center;
+    margin: 3vh auto;
+}
+
+#qq {
+    background: url(../picture/qq.png);
+}
+
+#qq img,
+#微信 img {
+    height: 70px;
+    width: 70px;
+    margin-top: 5vh;
+    display: none;
+}
+
+#qq:hover img,
+#微信:hover img {
+    display: block;
+}
+
+#微信 {
+    background: url(../picture/微信.png);
+}
+
+#footer-github {
+    background: url(../picture/github.png);
+}
+
+#net ul {
+    list-style-type: none;
+    margin: -1vh 0 0 4vh;
+}
+
+#net {
+    margin: 0 0 0 -8vh;
+}
+
+#net li {
+    margin: 0 1vh;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
 }
 
 
 /*只在小屏幕显示*/
 
 @media screen and (max-width:768px) {
+    #guide .container {
+        width: 100%;
+    }
     .carousel .item img {
         height: 250px;
     }
@@ -280,14 +509,5 @@ body {
     }
     #nav {
         font-size: 25px;
-    }
-    #嵌入式,
-    #android,
-    #web,
-    #大数据 {
-        width: 20%;
-    }
-    .row .img {
-        font-size: 5px;
     }
 }

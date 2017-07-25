@@ -36,33 +36,22 @@ window.onscroll = function() {
     }
 }
 
-function hightrows() {
-    if (!document.getElementsByTagName) {
-        return false;
-    }
-    if (!document.getElementsByTagName("tr")) {
-        return false;
-    }
-    var rows = document.getElementsByTagName("tr");
-    for (var i = 0; i < rows.length; i++) {
-        rows[i].onmouseover = function() {
-            this.style.fontWeight = "bold";
+function onmouseactive() {
+    var slides = document.getElementsByClassName("onmouse_slide");
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].onmouseover = function() {
+            var img = this.getElementsByTagName("div");
+            img[0].style.WebkitFilter = "blur(20px)";
+            img[0].style.filter = "blur(20px)";
+            img[1].style.display = 'block';
         }
-        rows[i].onmouseout = function() {
-            this.style.fontWeight = "normal";
+        slides[i].onmouseout = function() {
+            var img = this.getElementsByTagName("div");
+            img[0].style.WebkitFilter = "blur(0px)";
+            img[0].style.filter = "blur(0px)";
+            img[1].style.display = 'none';
         }
     }
 }
-/*
-function onmouseactive()
-{
-    var github=document.getElementById("github");
-    var salon=document.getElementById("salon");
-    var project=document.getElementById("project");
-    github.onmouseover=function(){
-
-    }
-}
-*/
 addLoadEvent(slide_top);
-addLoadEvent(hightrows);
+addLoadEvent(onmouseactive);
