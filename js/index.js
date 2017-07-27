@@ -20,18 +20,15 @@ window.onscroll = function() {
     var topScroll = document.body.scrollTop; //滚动的距离,距离顶部的距离
     var index_2 = document.getElementById("guide");
     var top = document.getElementById("top");
-    if (topScroll > 610) {
+    if (topScroll != 0) {
         index_2.style.display = "block";
         index_2.style.position = 'fixed'; //生成绝对定位元素，相对于浏览器窗口进行定位
         index_2.style.top = '0';
         index_2.style.zIndex = '1'; //设置元素堆叠顺序
+        top.style.display = 'block';
     } else {
         index_2.style.position = 'static'; //元素正常出现在流中
         index_2.style.display = "none";
-    }
-    if (topScroll != 0) {
-        top.style.display = 'block';
-    } else {
         top.style.display = 'none';
     }
 }

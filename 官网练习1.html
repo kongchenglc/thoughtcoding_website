@@ -4,6 +4,9 @@
 <head>
     <title>首页练习</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <link href="css/bootstrap.min.css" rel=stylesheet>
     <link href="css/index.css" rel="stylesheet">
 </head>
@@ -35,62 +38,63 @@
                 </div>
             </div>
         </div>
-    </header>
-    <!--轮播图-->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="img-responsive" src="picture/index_1.jpg" alt="西安邮电大学" width="100%" height="100%">
-                <div class="carousel-caption">
-                    <h1>我们的理念</h1>
-                    <p>技术改变生活，奋斗共享价值</p>
+        <!--轮播图-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="picture/index_1.jpg" alt="西安邮电大学" width="100%" height="100%">
+                    <div class="carousel-caption">
+                        <h1>我们的理念</h1>
+                        <p>技术改变生活，奋斗共享价值</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="picture/index_2.jpg" alt="西安邮电大学" width="100%" height="100%">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="picture/index_3.jpg" alt="西安邮电大学" width="100%" height="100%">
                 </div>
             </div>
-            <div class="item">
-                <img class="img-responsive" src="picture/index_2.jpg" alt="西安邮电大学" width="100%" height="100%">
-            </div>
-            <div class="item">
-                <img class="img-responsive" src="picture/index_3.jpg" alt="西安邮电大学" width="100%" height="100%">
-            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
-    <!--轮播图结束-->
+        <!--轮播图结束-->
+    </header>
     <!--引导区-->
-    <div id="guide">
-        <div id="index_nav" class="navbar navbar-default .navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+
+    <!--引导区结束-->
+    <!--关于-->
+    <div id="about">
+        <div id="guide">
+            <div id="index_nav" class="navbar navbar-default .navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                         <span class="sr-only">Toggle Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
-                </div>
-                <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
-                    <ul class="nav nav-tabs nav-justified">
-                        <li role="presentation"><a href="/">主页</a></li>
-                        <li role="presentation"><a href="/">动态</a></li>
-                        <li role="presentation"><a href="/">项目</a></li>
-                        <li role="presentation"><a href="/">关于</a></li>
-                        <li role="presentation"><a href="/">校友录</a></li>
-                        <li role="presentation"><a href="/">加入我们</a></li>
-                    </ul>
+                        <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                    </div>
+                    <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
+                        <ul class="nav nav-tabs nav-justified">
+                            <li role="presentation"><a href="/">主页</a></li>
+                            <li role="presentation"><a href="/">动态</a></li>
+                            <li role="presentation"><a href="/">项目</a></li>
+                            <li role="presentation"><a href="/">关于</a></li>
+                            <li role="presentation"><a href="/">校友录</a></li>
+                            <li role="presentation"><a href="/">加入我们</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--引导区结束-->
-    <!--关于-->
-    <div id="about">
         <div class="index_text">
             <h1>关于我们</h1>
             <p class="text_center">ThoughtCoding实验室由若干智能硬件爱好者于2015年4月共同创办。秉承以项目为导向的理念，深入实践。短短数月，在老师的指导下，<br> 通过嵌入式、大数据、安卓、WEB等各个方向的人员共同协作，参加了互联网+、大挑、3S杯、微软创新杯等大赛，并获得出色的成绩。同时有若干项目已经进驻西邮创业孵化基地。

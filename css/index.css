@@ -1,5 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, '微软雅黑';
+}
+
+header {
+    height: 100vh;
+    width: 100%;
 }
 
 header .navbar-default .navbar-brand {
@@ -53,7 +63,7 @@ header .navbar-nav>li {
 }
 
 .carousel .item img {
-    height: 580px;
+    height: 496px;
 }
 
 .down-arrow {
@@ -68,7 +78,6 @@ header .navbar-nav>li {
     display: block;
     vertical-align: middle;
     width: 400px;
-    height: 200px;
     left: 50%;
     top: 50%;
     margin: -100px 0 0 -200px;
@@ -137,16 +146,19 @@ header .navbar-nav>li {
 #about {
     position: relative;
     height: 100vh;
+    width: 100%;
 }
 
 #active {
     position: relative;
     height: 100vh;
+    width: 100%;
     background-color: #0dc5a0;
 }
 
 #contact {
     height: 80vh;
+    width: 100%;
     position: relative;
 }
 
@@ -174,7 +186,8 @@ header .navbar-nav>li {
 .index_text {
     text-align: center;
     line-height: 30px;
-    padding-top: 80px;
+    margin-top: 0px;
+    padding-top: 40px;
     margin-bottom: -20px;
     font-family: arial, "微软雅黑", "Microsoft YaHei";
 }
@@ -317,9 +330,10 @@ header .navbar-nav>li {
 }
 
 .active_content {
-    font-size: 15px;
-    margin: 0 40px;
+    font-size: 14px;
+    margin: 0 55px;
     height: 200px;
+    width: 200px;
     position: absolute;
     display: none;
     color: black;
@@ -334,12 +348,18 @@ header .navbar-nav>li {
 .active_content li a {
     display: block;
     font-weight: 400;
-    margin: 10px 0;
+    margin: 10px -3px;
     color: black;
 }
 
 .active_content li {
     font-weight: 400;
+    padding: 0 5px;
+}
+
+.active_content ul {
+    font-weight: 400;
+    margin: 0 25px;
 }
 
 .active_content {
@@ -423,6 +443,7 @@ header .navbar-nav>li {
 .footer {
     padding: 2vh 0vh;
     height: 25vh;
+    width: 100%;
     background-color: #323436;
     color: #B0B0B0;
     font-size: 13px;
@@ -468,7 +489,7 @@ header .navbar-nav>li {
 
 #net ul {
     list-style-type: none;
-    margin: -1vh 0 0 4vh;
+    margin: -2vh 0 0 9vh;
 }
 
 #net {
@@ -510,4 +531,42 @@ header .navbar-nav>li {
     #nav {
         font-size: 25px;
     }
+}
+
+
+/*实验*/
+
+
+/* Tablet Landscape */
+
+@media screen and (max-width: 1060px) {
+    #primary {
+        width: 67%;
+    }
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+
+/* Tabled Portrait */
+
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 100%;
 }
