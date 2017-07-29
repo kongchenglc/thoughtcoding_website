@@ -4,13 +4,16 @@
 <head>
     <title>首页练习</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <link href="css/bootstrap.min.css" rel=stylesheet>
     <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="navbar navbar-default" role="navigation">
+        <div id="index_nav" class="navbar navbar-default .navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -20,12 +23,12 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
-                    <a href="example1.html" class="navbar-brand" id="nav">ThoughtCoding实验室</a>
+                    <a id="head" href="example1.html" class="navbar-brand" id="nav">ThoughtCoding实验室</a>
                 </div>
                 <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
                 <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="##">主页</a></li>
+                        <li id="in"><a href="##">主页</a></li>
                         <li><a href="/">动态</a></li>
                         <li><a href="/">项目</a></li>
                         <li><a href="/">关于</a></li>
@@ -35,83 +38,94 @@
                 </div>
             </div>
         </div>
-    </header>
-    <!--轮播图-->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="img-responsive" src="picture/index_1.jpg" alt="西安邮电大学" width="100%" height="100%">
-                <div class="carousel-caption">
-                    <h1>我们的理念</h1>
-                    <p>技术改变生活，奋斗共享价值</p>
+        <!--轮播图-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="picture/index_1.jpg" alt="西安邮电大学" width="100%" height="100%">
+                    <div class="carousel-caption">
+                        <h1>我们的理念</h1>
+                        <p>技术改变生活，奋斗共享价值</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="picture/index_2.jpg" alt="西安邮电大学" width="100%" height="100%">
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="picture/index_3.jpg" alt="西安邮电大学" width="100%" height="100%">
                 </div>
             </div>
-            <div class="item">
-                <img class="img-responsive" src="picture/index_2.jpg" alt="西安邮电大学" width="100%" height="100%">
-            </div>
-            <div class="item">
-                <img class="img-responsive" src="picture/index_3.jpg" alt="西安邮电大学" width="100%" height="100%">
-            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-        <a href="#guide" id="slide">
-            <img id="nav_2" class="down-arrow" src="picture/bitmap.jpg">
-        </a>
-    </div>
-    <!--轮播图结束-->
+        <!--轮播图结束-->
+    </header>
     <!--引导区-->
-    <div id="guide">
-        <ul class="nav nav-tabs nav-justified">
-            <li role="presentation"><a href="#about">About</a></li>
-            <li role="presentation"><a href="#active">Active</a></li>
-            <li role="presentation"><a href="#project">Project</a></li>
-            <li role="presentation"><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+
     <!--引导区结束-->
     <!--关于-->
     <div id="about">
-        <div id="index_text">
-            <p id="text_center">ThoughtCoding实验室由若干智能硬件爱好者于2015年4月共同创办。秉承以项目为导向的理念，深入实践。短短数月，在老师的指导下，<br> 通过嵌入式、大数据、安卓、WEB等各个方向的人员共同协作，参加了互联网+、大挑、3S杯、微软创新杯等大赛，并获得出色的成绩。同时有若干项目已经进驻西邮创业孵化基地。
+        <div id="guide">
+            <div id="index_nav" class="navbar navbar-default .navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                    </div>
+                    <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
+                        <ul class="nav nav-tabs nav-justified">
+                            <li role="presentation"><a href="/">主页</a></li>
+                            <li role="presentation"><a href="/">动态</a></li>
+                            <li role="presentation"><a href="/">项目</a></li>
+                            <li role="presentation"><a href="/">关于</a></li>
+                            <li role="presentation"><a href="/">校友录</a></li>
+                            <li role="presentation"><a href="/">加入我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="index_text">
+            <h1>关于我们</h1>
+            <p class="text_center">ThoughtCoding实验室由若干智能硬件爱好者于2015年4月共同创办。秉承以项目为导向的理念，深入实践。短短数月，在老师的指导下，<br> 通过嵌入式、大数据、安卓、WEB等各个方向的人员共同协作，参加了互联网+、大挑、3S杯、微软创新杯等大赛，并获得出色的成绩。同时有若干项目已经进驻西邮创业孵化基地。
             </p>
         </div>
-        <div class="row">
-            <div class="col-sm-3 col-md-2 col-lg-2">
-                <img src="picture/index-嵌入式.png">
+        <div class="row intro">
+            <div class="col-sm-5 col-md-5 col-lg-5" style="margin-top:40px;">
+                <div id="嵌入式">qianrushi</div>
+                <div id="android">qianrushi</div>
+                <div id="web">qianrushi</div>
+                <div id="大数据">qianrushi</div>
             </div>
-            <div class="col-sm-2 col-md-3 col-lg-3 text">
-                <p>嵌入式开发小组</p>
+            <div class="col-sm-2 col-md-2 col-lg-2"></div>
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <div class="row img1">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div id="嵌入式1"></div>
+                        <p class="img">嵌入式开发小组</p>
+                        <div id="大数据1"></div>
+                        <p class="img">大数据开发小组</p>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div id="android1"></div>
+                        <p class="img">android开发小组</p>
+                        <div id="web1"></div>
+                        <p class="img">web开发小组</p>
+                    </div>
+                </div>
+
+
             </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
-            <div class="col-sm-3 col-md-2 col-lg-2">
-                <img src="picture/index-android.png">
-            </div>
-            <div class="col-sm-2 col-md-3 col-lg-3 text">
-                <p>Android开发小组</p>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 col-md-2 col-lg-2">
-                <img src="picture/index-大数据.png">
-            </div>
-            <div class="col-sm-2 col-md-3 col-lg-3 text">
-                <p>大数据开发小组</p>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
-            <div class="col-sm-3 col-md-2 col-lg-2">
-                <img src="picture/index-html5.png">
-            </div>
-            <div class="col-sm-2 col-md-3 col-lg-3 text">
-                <p>web开发小组</p>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1"></div>
         </div>
     </div>
     </div>
@@ -119,66 +133,108 @@
     <!--活动-->
     <div id="active">
         <a href="#project" class="next"></a>
-        <div id="github">
-            <img src="picture/index-github.png">
-            <h2>项目平台</h2><b>在github上fork我们的开放项目</b>
-            <table class="table table-striped">
-                <tbody>
-                    <tr>
-                        <td class="tablehead">标题</td>
-                        <td>github内容</td>
-                        <td>网址</td>
-                    </tr>
-                    <tr>
-                        <td class="tablehead">标题</td>
-                        <td>github内容</td>
-                        <td>网址</td>
-                    </tr>
-                    <tr>
-                        <td class="tablehead">标题</td>
-                        <td>github内容</td>
-                        <td>网址</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="index_text">
+            <h1>动态</h1>
+            <p class="text_center">ThoughtCoding实验室由若干智能硬件爱好者于2015年4月共同创办。秉承以项目为导向的理念，深入实践。短短数月，在老师的指导下，<br> 通过嵌入式、大数据、安卓、WEB等各个方向的人员共同协作，参加了互联网+、大挑、3S杯、微软创新杯等大赛，并获得出色的成绩。同时有若干项目已经进驻西邮创业孵化基地。
+            </p>
         </div>
-        <div id="salon">
-            <img src="picture/index-salon.png">
-            <h2>技术交流</h2><b>来参加我们的学习沙龙吧~</b>
-            <table class="table table-striped">
-                <tbody>
-                    <tr>
-                        <td class="tablehead">标题与内容</td>
-                        <td>主讲人</td>
-                        <td>时间</td>
-                        <td>地址</td>
-                    </tr>
-                    <tr>
-                        <td class="tablehead">标题与内容</td>
-                        <td>主讲人</td>
-                        <td>时间</td>
-                        <td>地址</td>
-                    </tr>
-                    <tr>
-                        <td class="tablehead">标题与内容</td>
-                        <td>主讲人</td>
-                        <td>时间</td>
-                        <td>地址</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 onmouse_slide">
+                <div id="github" class="active_img"></div>
+                <div class="active_content">
+                    <p>github项目平台平台</p>
+                    <ul>
+                        <li><a href="https://github.com/yuning1207">github内容</a></li>
+                        <li><a href="https://github.com/yuning1207">github内容</a></li>
+                        <li><a href="https://github.com/yuning1207">github内容</a></li>
+                        <li><a href="https://github.com/yuning1207">github内容</a></li>
+                        <li><a href="https://github.com/yuning1207">github内容</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 onmouse_slide">
+                <div id="salon" class="active_img"></div>
+                <div class="active_content">
+                    <p>技术交流</p>
+                    <ul>
+                        <li>题目 讲解人 时间 地点</li>
+                        <li>题目 讲解人 时间 地点</li>
+                        <li>题目 讲解人 时间 地点</li>
+                        <li>题目 讲解人 时间 地点</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 onmouse_slide">
+                <div id="project" class="active_img"></div>
+                <div class="active_content">
+                    <p>项目孵化</p>
+                    <ul>
+                        <li><a href="https://github.com/yuning1207">智能四旋翼无人机</a></li>
+                        <li><a href="https://github.com/yuning1207">爪爪智能宠物挂件</a></li>
+                        <li><a href="https://github.com/yuning1207">城市智能停车诱导系统</a></li>
+                        <li><a href="https://github.com/yuning1207">基于Android平台的城市地标移动搜索开发</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!--活动结束-->
-    <!--项目-->
-    <div id="project">
-        <a href="#q_a" class="next"></a>
-    </div>
-    <!--项目结束-->
     <!--联系-->
     <div id="contact">
+        <div class="row">
+            <div class="contact_qa col-sm-6 col-md-6 col-lg-6">
+                <h2>问题和建议</h2><img id="建议" src="picture/建议.png">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <textarea rows="8" cols="55" placeholder="请输入想对我们说的话"></textarea>
+                        <label>邮箱：<input type="email" class="form-control" placeholder="请输入邮箱"></label>
+                        <button type="submit" class="btn btn-default">提交</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6" id="target">
+                <h2>有话对你说</h2><img id="爱心" src="picture/爱心.png">
+                <p>我们会在每年的4月份左右进行纳新宣讲，欢迎小伙伴加入哦~</p>
+                <p>当然如果没有在特定时间参与我们的纳新活动，平时也是可以来咨询面试的，我们不会错过任何一个优秀的同学。</p>
+                <h3>友情链接</h3>
+                <a href="http://www.xiyou.edu.cn/">西安邮电大学</a>
+                <a href="https://www.xiyoulinux.org/">西邮Linux兴趣小组</a>
+                <a href="http://www.xiyounet.org/">西邮网络科技协会</a>
+                <a href="https://www.xiyoumobile.com/">西邮移动应用开发实验室</a>
+                <a href="http://sta.xupt.edu.cn/"> 西邮软件科技协会</a>
+            </div>
+        </div>
     </div>
     <!--联系结束-->
+    <!--footer-->
+    <div class="footer">
+        <div class="row">
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <p><img src="picture/地址.png"> 地址：陕西省西安市长安区西安邮电大学东区FZ332</p>
+                <p><img src="picture/邮箱.png"> 邮箱：ThoughtCoding@163.com</p>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <div id="net">
+                    社交网络
+                    <ul>
+                        <li id="qq"><img src="picture/qq码.png"></li>
+                        <li id="微信"><img src="picture/微信码.png"></li>
+                        <li id="footer-github"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-5 col-lg-5">
+                <p>内容许可：本站由&nbsp;<a rel="license" target="_blank" href="http://cloud.xupt.edu.cn"><span>西安邮电大学计算机学院</span></a> &nbsp;提供服务器支持，由&nbsp;
+                    <a rel="license" target="_blank" href="http://cdn.code.baidu.com"><span>百度</span></a> &nbsp;提供CDN加速服务。 如未特别声明，本站所有内容均遵循
+                    <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/cn/"><span>CC-BY-SA 3.0协议（署名-相同方式共享）进行许可</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="footer_last">
+            <p>Copyright © 2017 ThoughtCoding实验室 All Rights Reserved | 陕ICP备040096号 | version:2015b1</p>
+        </div>
+    </div>
     <a id="top"><img src="picture/index-top.jpg"><br>TOP</a>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

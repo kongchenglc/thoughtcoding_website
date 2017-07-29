@@ -1,36 +1,69 @@
-body {
-    font-family: Arial, '微软雅黑';
-    background-color: #F0F0F0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-default .navbar-brand {
+body {
+    font-family: Arial, '微软雅黑';
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+header .navbar-default .navbar-brand {
     font-family: 'Ruda', sans-serif;
-    color: #337ab7;
+    color: black;
     font-size: 30px;
     font-weight: 600;
 }
 
-.navbar-default .navbar-nav>li>a {
+header .navbar-default .navbar-nav>li>a {
     font-family: "Lato", "Heiti SC", "Hiragino Sans GB", "STHeiti", "Source Han Sans CN", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "微软雅黑", sans-serif;
-    color: #337ab7;
+    color: black;
     font-size: 20px;
     font-weight: 500;
+    transition: all 0.4s ease;
+    display: block;
+    padding: 10px 0;
+    line-height: 20px;
+    margin: 10px 20px;
+    border-bottom: 1px solid #f8f8f8;
 }
 
-.navbar {
+#in {
+    background-color: #E0E0E0;
+}
+
+#in>a {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#in a:hover {
+    color: #0dc5a0;
+    border-bottom: 1px solid #0dc5a0;
+}
+
+header .navbar-default .navbar-nav>li>a:hover {
+    color: #0dc5a0;
+    border-bottom: 1px solid #0dc5a0;
+}
+
+header .navbar {
     margin-bottom: 0px;
 }
 
-.navbar-brand {
+header .navbar-brand {
     line-height: 30px;
 }
 
-.navbar-nav>li>a {
+header .navbar-nav>li {
     line-height: 30px;
 }
 
 .carousel .item img {
-    height: 580px;
+    height: 496px;
 }
 
 .down-arrow {
@@ -45,7 +78,6 @@ body {
     display: block;
     vertical-align: middle;
     width: 400px;
-    height: 200px;
     left: 50%;
     top: 50%;
     margin: -100px 0 0 -200px;
@@ -61,38 +93,73 @@ body {
 }
 
 #guide {
-    display: block;
-    border-radius: 15px;
-    margin: 0 200px 0 200px;
-    font-size: 18px;
+    display: none;
+    margin: 0;
+    font-size: 15px;
     font-weight: 600;
-    background-color: #D0D0D0;
+    background-color: #323436;
+    opacity: 0.98;
+    width: 100%;
+}
+
+#guide .navbar {
+    margin: 0px;
+    min-height: 0px;
+}
+
+#guide .container {
+    padding: 0px;
+}
+
+#guide .navbar-collapse {
+    padding: 0px;
+}
+
+#guide ul {
+    background-color: #323436;
+    padding: 0 150px;
+}
+
+#guide a {
+    background-color: #323436;
+    padding: 12px 0;
+    color: #B0B0B0;
+    border: 0;
+    border-radius: 0;
+}
+
+#guide a:hover {
+    border: 0;
+    background-color: #323436;
+    color: white;
+}
+
+#guide .container {
+    width: 100%;
+}
+
+#guide .navbar-default {
+    background-color: #323436;
+    border: none;
 }
 
 #about {
     position: relative;
-    display: block;
-    border-bottom: 1px solid black;
     height: 100vh;
+    width: 100%;
 }
 
 #active {
-    height: 500px;
     position: relative;
-    border-bottom: 1px solid black;
     height: 100vh;
-}
-
-#project {
-    height: 500px;
-    position: relative;
-    border-bottom: 1px solid black;
+    width: 100%;
+    background-color: #0dc5a0;
 }
 
 #contact {
-    height: 500px;
+    height: 80vh;
+    width: 100%;
     position: relative;
-    border-bottom: 1px solid black;
 }
 
 #top {
@@ -116,27 +183,106 @@ body {
     width: 80px;
 }
 
-#index_text {
-    margin: 0 auto;
+.index_text {
+    text-align: center;
+    line-height: 30px;
+    margin-top: 0px;
+    padding-top: 40px;
+    margin-bottom: -20px;
+    font-family: arial, "微软雅黑", "Microsoft YaHei";
+}
+
+#active .index_text {
     text-align: center;
     line-height: 30px;
     padding-top: 80px;
-    padding-bottom: 20px;
+    margin-bottom: -20px;
+    color: white;
 }
 
-.row {
-    padding: 50px 150px;
-    width: 100%;
+
+#active .text_center {
+    font-weight: 500;
 }
 
-.row img {
-    float: left;
+.index_text h1 {
+    letter-spacing: 1px;
 }
 
-#text_center {
+.text_center {
     font-weight: 600;
     font-size: 15px;
-    line-height: 30px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.intro {
+    padding: 50px 150px;
+}
+
+#嵌入式 {
+    background-color: #3498db;
+    height: 35px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 3px;
+    color: white;
+}
+
+#大数据 {
+    background-color: #7e57c2;
+    height: 35px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 3px;
+    color: white;
+}
+
+#android {
+    background-color: #0dc5a0;
+    height: 35px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 3px;
+    color: white;
+}
+
+#web {
+    background-color: #FF6600;
+    height: 35px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 8px #888888;
+    border-radius: 3px;
+    color: white;
+}
+
+#嵌入式1,
+#大数据1,
+#android1,
+#web1 {
+    margin: 0px;
+    height: 96px;
+    width: 96px;
+}
+
+.img1 {
+    padding: 40px;
+}
+
+#嵌入式1 {
+    background-image: url(../picture/index-嵌入式.png);
+}
+
+#大数据1 {
+    background-image: url(../picture/index-大数据.png);
+}
+
+#android1 {
+    background-image: url(../picture/index-android.png);
+}
+
+#web1 {
+    background-image: url(../picture/index-h5.png);
 }
 
 .text {
@@ -145,52 +291,226 @@ body {
     height: 100px;
 }
 
-table {
-    margin: 0;
+.img {
+    padding: 5px 0;
 }
 
 #github {
-    padding: 100px 150px 20px 150px;
+    background: url(../picture/github.jpg);
 }
 
 #salon {
-    padding: 100px 150px 20px 150px;
+    background: url(../picture/salon.jpg);
 }
 
-#github img {
-    float: right;
-    padding-bottom: 10px;
+#project {
+    background: url(../picture/project.jpg);
 }
 
-#salon img {
-    float: right;
-    padding-bottom: 10px;
+.row {
+    margin: 0;
 }
 
-#github h2 {
+#active .row {
+    margin: 100px 220px;
+}
+
+.active_img {
+    height: 200px;
+    width: 200px;
+    margin: 0 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px #888888;
+}
+
+.onmouse_slide {
+    position: relative;
+}
+
+.active_content {
+    font-size: 14px;
+    margin: 0 55px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    color: black;
+}
+
+.active_content p {
+    margin: 10px 0px 5px 40px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.active_content li a {
+    display: block;
+    font-weight: 400;
+    margin: 10px -3px;
+    color: black;
+}
+
+.active_content li {
+    font-weight: 400;
+    padding: 0 5px;
+}
+
+.active_content ul {
+    font-weight: 400;
+    margin: 0 25px;
+}
+
+.active_content {
+    color: black;
+}
+
+#contact .row {
+    padding: 15vh 20vh;
+}
+
+#contact .row h2 {
+    color: #0dc5a0;
+    font-weight: 400;
     display: inline;
 }
 
-#salon h2 {
-    display: inline;
+.form-inline {
+    margin: 3vh 0 0 0;
 }
 
-#salon b {
-    font-size: 18px;
-    font-weight: 500;
-    padding-left: 20px;
+#contact .row h3 {
+    color: #0dc5a0;
+    font-weight: 400;
+    padding: 1vh 0 1vh 0;
 }
 
-#github b {
-    font-size: 18px;
-    font-weight: 500;
-    padding-left: 20px;
+#contact .row p {
+    font: 2.3vh/5vh "微软雅黑";
+    border-bottom: 1px dashed black;
+    margin: 2vh 0;
+}
+
+#contact .row textarea {
+    display: block;
+    border-radius: 5px;
+    margin: 2vh 0;
+}
+
+#contact .row input {
+    border-radius: 2px;
+    margin: 2vh 9vh 2vh 0;
+}
+
+.contact_qa {
+    padding-left: 15vh;
+}
+
+#contact #target a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    float: left;
+    height: 5vh;
+    width: 30vh;
+}
+
+#contact #target a:hover {
+    text-decoration: underline;
+    color: #0dc5a0;
+}
+
+#contact img {
+    float: right;
+    position: absolute;
+    top: -1vh;
+}
+
+#建议 {
+    right: 19vh;
+}
+
+#爱心 {
+    right: 3vh;
+}
+
+#contact {
+    height: 75vh;
+    position: relative;
+}
+
+.footer {
+    padding: 2vh 0vh;
+    height: 25vh;
+    width: 100%;
+    background-color: #323436;
+    color: #B0B0B0;
+    font-size: 13px;
+}
+
+.footer a {
+    color: #D0D0D0;
+}
+
+.footer a:hover {
+    color: #0dc5a0;
+}
+
+.footer .footer_last {
+    text-align: center;
+    margin: 3vh auto;
+}
+
+#qq {
+    background: url(../picture/qq.png);
+}
+
+#qq img,
+#微信 img {
+    height: 70px;
+    width: 70px;
+    margin-top: 5vh;
+    display: none;
+}
+
+#qq:hover img,
+#微信:hover img {
+    display: block;
+}
+
+#微信 {
+    background: url(../picture/微信.png);
+}
+
+#footer-github {
+    background: url(../picture/github.png);
+}
+
+#net ul {
+    list-style-type: none;
+    margin: -2vh 0 0 9vh;
+}
+
+#net {
+    margin: 0 0 0 -8vh;
+}
+
+#net li {
+    margin: 0 1vh;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
 }
 
 
 /*只在小屏幕显示*/
 
 @media screen and (max-width:768px) {
+    #guide .container {
+        width: 100%;
+    }
     .carousel .item img {
         height: 250px;
     }
@@ -212,4 +532,42 @@ table {
     #nav {
         font-size: 25px;
     }
+}
+
+
+/*实验*/
+
+
+/* Tablet Landscape */
+
+@media screen and (max-width: 1060px) {
+    #primary {
+        width: 67%;
+    }
+    #secondary {
+        width: 30%;
+        margin-left: 3%;
+    }
+}
+
+
+/* Tabled Portrait */
+
+@media screen and (max-width: 768px) {
+    #primary {
+        width: 100%;
+    }
+    #secondary {
+        width: 100%;
+        margin: 0;
+        border: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 100%;
 }
