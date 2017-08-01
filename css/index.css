@@ -32,6 +32,52 @@ header .navbar-default .navbar-nav>li>a {
     border-bottom: 1px solid #f8f8f8;
 }
 
+.top_nav_collapse {
+    background-color: #323436;
+}
+
+.top_nav_collapse ul.nav li a {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #B0B0B0;
+    margin: 0 20px;
+    border-bottom: none;
+}
+
+.top_nav_collapse ul.nav li a:hover {
+    color: white;
+    border-bottom: none;
+}
+
+.top_nav_collapse ul.nav #in a:hover {
+    color: white;
+    border-bottom: none;
+}
+
+.top_nav_collapse ul.nav #in {
+    background-color: #686868;
+}
+
+.top_nav_collapse ul.nav #in a {
+    border-bottom: none;
+}
+
+.top_nav_collapse #head {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #B0B0B0;
+    height: 100%;
+    padding: 5px 15px;
+    font-size: 25px;
+    color: white;
+}
+
+.top_nav_collapse {
+    min-height: 0px;
+}
+
 #in {
     background-color: #E0E0E0;
 }
@@ -45,7 +91,7 @@ header .navbar-default .navbar-nav>li>a {
     border-bottom: 1px solid #0dc5a0;
 }
 
-header .navbar-default .navbar-nav>li>a:hover {
+.navbar .navbar-nav>li>a:hover {
     color: #0dc5a0;
     border-bottom: 1px solid #0dc5a0;
 }
@@ -62,8 +108,12 @@ header .navbar-nav>li {
     line-height: 30px;
 }
 
+.item {
+    height: calc(100vh - 10px);
+}
+
 .carousel .item img {
-    height: 496px;
+    height: auto;
 }
 
 .down-arrow {
@@ -75,12 +125,15 @@ header .navbar-nav>li {
 }
 
 .carousel-caption {
-    display: block;
     vertical-align: middle;
-    width: 400px;
-    left: 50%;
-    top: 50%;
-    margin: -100px 0 0 -200px;
+    top: 35%;
+    font-size: 20px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.navbar-fixed-top {
+    border-width: 0 0 1px 0;
 }
 
 .carousel-caption p {
@@ -92,72 +145,18 @@ header .navbar-nav>li {
     width: 43px;
 }
 
-#guide {
-    display: none;
-    margin: 0;
-    font-size: 15px;
-    font-weight: 600;
-    background-color: #323436;
-    opacity: 0.98;
-    width: 100%;
-}
-
-#guide .navbar {
-    margin: 0px;
-    min-height: 0px;
-}
-
-#guide .container {
-    padding: 0px;
-}
-
-#guide .navbar-collapse {
-    padding: 0px;
-}
-
-#guide ul {
-    background-color: #323436;
-    padding: 0 150px;
-}
-
-#guide a {
-    background-color: #323436;
-    padding: 12px 0;
-    color: #B0B0B0;
-    border: 0;
-    border-radius: 0;
-}
-
-#guide a:hover {
-    border: 0;
-    background-color: #323436;
-    color: white;
-}
-
-#guide .container {
-    width: 100%;
-}
-
-#guide .navbar-default {
-    background-color: #323436;
-    border: none;
-}
-
 #about {
     position: relative;
-    height: 100vh;
     width: 100%;
 }
 
 #active {
     position: relative;
-    height: 100vh;
     width: 100%;
     background-color: #0dc5a0;
 }
 
 #contact {
-    height: 80vh;
     width: 100%;
     position: relative;
 }
@@ -216,7 +215,7 @@ header .navbar-nav>li {
 }
 
 .intro {
-    padding: 50px 150px;
+    margin: 100px 150px 100px 160px;
 }
 
 #嵌入式 {
@@ -295,74 +294,91 @@ header .navbar-nav>li {
 }
 
 #github {
-    background: url(../picture/github.jpg);
+    background: url("../picture/github.jpg");
 }
 
 #salon {
-    background: url(../picture/salon.jpg);
+    background: url("../picture/salon.jpg");
 }
 
 #project {
-    background: url(../picture/project.jpg);
+    background: url("../picture/project.jpg");
 }
 
-.row {
-    margin: 0;
+#github::before {
+    background: url("../picture/github.jpg") no-repeat center;
 }
 
-#active .row {
-    margin: 100px 220px;
+#salon::before {
+    background: url("../picture/salon.jpg") no-repeat center;
 }
 
-.active_img {
-    height: 200px;
-    width: 200px;
-    margin: 0 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
+#project::before {
+    background: url("../picture/project.jpg") no-repeat center;
+}
+
+#github::before,
+#salon::before,
+#project::before {
     position: absolute;
-    border-radius: 5px;
-    box-shadow: 1px 1px 8px #888888;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    filter: blur(20px);
+    -webkit-filter: blur(10px);
+    /* Chrome, Safari, Opera */
+    margin: 20px;
 }
 
-.onmouse_slide {
+#github,
+#salon,
+#project {
+    height: 250px;
+    width: 250px;
+}
+
+#github {
+    margin: 80px 0px 80px 150px;
+}
+
+#salon {
+    margin: 80px 150px;
+}
+
+#project {
+    margin: 80px 135px 80px 0px;
+}
+
+.main {
+    height: 200px;
+    margin: 25px 0;
+    text-align: center;
     position: relative;
+    background: hsla(0, 0%, 100%, .3);
+    overflow: hidden;
 }
 
-.active_content {
-    font-size: 14px;
-    margin: 0 55px;
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    display: none;
+.main li,
+a {
     color: black;
 }
 
-.active_content p {
-    margin: 10px 0px 5px 40px;
-    font-size: 17px;
+.main li:hover,
+a:hover {
     font-weight: 600;
-}
-
-.active_content li a {
-    display: block;
-    font-weight: 400;
-    margin: 10px -3px;
+    font-size: 15px;
     color: black;
 }
 
-.active_content li {
-    font-weight: 400;
-    padding: 0 5px;
+.main li {
+    margin: 10px 0;
 }
 
-.active_content ul {
-    font-weight: 400;
-    margin: 0 25px;
-}
-
-.active_content {
+.main p {
+    font-size: 18px;
+    font-weight: 600;
     color: black;
 }
 
@@ -427,22 +443,16 @@ header .navbar-nav>li {
     top: -1vh;
 }
 
-#建议 {
-    right: 19vh;
-}
-
 #爱心 {
     right: 3vh;
 }
 
 #contact {
-    height: 75vh;
     position: relative;
 }
 
 .footer {
     padding: 2vh 0vh;
-    height: 25vh;
     width: 100%;
     background-color: #323436;
     color: #B0B0B0;
@@ -507,9 +517,6 @@ header .navbar-nav>li {
 /*只在小屏幕显示*/
 
 @media screen and (max-width:768px) {
-    #guide .container {
-        width: 100%;
-    }
     .carousel .item img {
         height: 250px;
     }
@@ -520,53 +527,29 @@ header .navbar-nav>li {
         font-size: 14px;
     }
     .carousel-caption {
-        margin: -50px 0 0 -190px;
+        top: 10%;
+        font-size: 14px;
     }
-    #nav_2 {
-        height: 18px;
-        width: 22px;
-        margin: 0 0 0 12px;
-        bottom: 10px;
+    .carousel-control.right {
+        height: 250px;
     }
-    #nav {
+    .carousel-control.left {
+        height: 250px;
+    }
+    #head {
         font-size: 25px;
     }
-}
-
-
-/*实验*/
-
-
-/* Tablet Landscape */
-
-@media screen and (max-width: 1060px) {
-    #primary {
-        width: 67%;
+    .intro {
+        padding: 50px 50px;
+        margin: 50px 5px 50px 10px;
     }
-    #secondary {
-        width: 30%;
-        margin-left: 3%;
+    .img1 {
+        padding: 40px 20px;
     }
-}
-
-
-/* Tabled Portrait */
-
-@media screen and (max-width: 768px) {
-    #primary {
-        width: 100%;
+    #project {
+        margin-left: 150px;
     }
-    #secondary {
-        width: 100%;
-        margin: 0;
-        border: none;
+    #contact .row {
+        padding: 15vh 3vh;
     }
-}
-
-img {
-    max-width: 100%;
-}
-
-html {
-    font-size: 100%;
 }

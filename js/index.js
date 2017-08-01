@@ -16,20 +16,55 @@ function slide_top() {
         }, 50);
     }
 }
+
+function addclass(element, value) {
+    if (!element.className) {
+        element.className = value;
+    } else {
+        var newClassName = element.className;
+        newClassName += " ";
+        newClassName += value;
+        element.className = newClassName;
+    }
+}
+
+function remove(element, value) {
+    if (element.className) {
+        var allClassName = element.className.split(" "); //得到所有类名
+        for (var i = 0; i < allClassName.length; i++) {
+            if (allClassName[i] == value) {
+                allClassName.splice(i, i); //删除第i位元素，删除一位
+                break;
+            }
+        }
+        var result;
+        var listName = allClassName;
+        for (var j = 0; j < listName.length; j++) {
+            if (j == 0) {
+                result = listName[j];
+                result += " ";
+            } else {
+                result += listName[j];
+                result += " ";
+            }
+        }
+        element.className = result;
+    }
+}
+
 window.onscroll = function() {
     var topScroll = document.body.scrollTop; //滚动的距离,距离顶部的距离
-    var index_2 = document.getElementById("guide");
+    var index_nav = document.getElementById("index_nav");
     var top = document.getElementById("top");
     if (topScroll != 0) {
-        index_2.style.display = "block";
-        index_2.style.position = 'fixed'; //生成绝对定位元素，相对于浏览器窗口进行定位
-        index_2.style.top = '0';
-        index_2.style.zIndex = '1'; //设置元素堆叠顺序
         top.style.display = 'block';
     } else {
-        index_2.style.position = 'static'; //元素正常出现在流中
-        index_2.style.display = "none";
         top.style.display = 'none';
+    }
+    if (topScroll >= 60) {
+        addclass(index_nav, "top_nav_collapse");
+    } else {
+        remove(index_nav, "top_nav_collapse");
     }
 }
 
