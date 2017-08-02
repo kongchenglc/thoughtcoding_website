@@ -16,39 +16,56 @@ function slide_top() {
         }, 50);
     }
 }
-window.onscroll = function() {
-    var topScroll = document.body.scrollTop; //滚动的距离,距离顶部的距离
-    var index_2 = document.getElementById("guide");
-    var top = document.getElementById("top");
-    if (topScroll != 0) {
-        index_2.style.display = "block";
-        index_2.style.position = 'fixed'; //生成绝对定位元素，相对于浏览器窗口进行定位
-        index_2.style.top = '0';
-        index_2.style.zIndex = '1'; //设置元素堆叠顺序
-        top.style.display = 'block';
+
+function addclass(element, value) {
+    if (!element.className) {
+        element.className = value;
     } else {
-        index_2.style.position = 'static'; //元素正常出现在流中
-        index_2.style.display = "none";
-        top.style.display = 'none';
+        var newClassName = element.className;
+        newClassName += " ";
+        newClassName += value;
+        element.className = newClassName;
     }
 }
 
-function onmouseactive() {
-    var slides = document.getElementsByClassName("onmouse_slide");
-    for (var i = 0; i < slides.length; i++) {
-        slides[i].onmouseover = function() {
-            var img = this.getElementsByTagName("div");
-            img[0].style.WebkitFilter = "blur(20px)";
-            img[0].style.filter = "blur(20px)";
-            img[1].style.display = 'block';
+function removeclass(element, value) {
+    if (element.className) {
+        var allClassName = element.className.split(" "); //得到所有类名
+        for (var i = 0; i < allClassName.length; i++) {
+            if (allClassName[i] == value) {
+                allClassName.splice(i, i); //删除第i位元素，删除一位
+                break;
+            }
         }
-        slides[i].onmouseout = function() {
-            var img = this.getElementsByTagName("div");
-            img[0].style.WebkitFilter = "blur(0px)";
-            img[0].style.filter = "blur(0px)";
-            img[1].style.display = 'none';
+        var result;
+        var listName = allClassName;
+        for (var j = 0; j < listName.length; j++) {
+            if (j == 0) {
+                result = listName[j];
+                result += " ";
+            } else {
+                result += listName[j];
+                result += " ";
+            }
         }
+        element.className = result;
     }
 }
+
+window.onscroll = function() {
+    topScroll = document.body.scrollTop; //滚动的距离,距离顶部的距离
+    var index_nav = document.getElementById("index_nav");
+    if (topScroll >= 30) {
+        addclass(index_nav, "top_nav_collapse");
+    } else {
+        removeclass(index_nav, "top_nav_collapse");
+    }
+    var top = document.getElementById("top");
+    if (topScroll != 0) {
+        top.style.display = 'block';
+    } else {
+        top.style.display = 'none';
+    }
+
+}
 addLoadEvent(slide_top);
-addLoadEvent(onmouseactive);
