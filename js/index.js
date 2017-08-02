@@ -28,7 +28,7 @@ function addclass(element, value) {
     }
 }
 
-function remove(element, value) {
+function removeclass(element, value) {
     if (element.className) {
         var allClassName = element.className.split(" "); //得到所有类名
         for (var i = 0; i < allClassName.length; i++) {
@@ -53,37 +53,19 @@ function remove(element, value) {
 }
 
 window.onscroll = function() {
-    var topScroll = document.body.scrollTop; //滚动的距离,距离顶部的距离
+    topScroll = document.body.scrollTop; //滚动的距离,距离顶部的距离
     var index_nav = document.getElementById("index_nav");
+    if (topScroll >= 30) {
+        addclass(index_nav, "top_nav_collapse");
+    } else {
+        removeclass(index_nav, "top_nav_collapse");
+    }
     var top = document.getElementById("top");
     if (topScroll != 0) {
         top.style.display = 'block';
     } else {
         top.style.display = 'none';
     }
-    if (topScroll >= 60) {
-        addclass(index_nav, "top_nav_collapse");
-    } else {
-        remove(index_nav, "top_nav_collapse");
-    }
-}
 
-function onmouseactive() {
-    var slides = document.getElementsByClassName("onmouse_slide");
-    for (var i = 0; i < slides.length; i++) {
-        slides[i].onmouseover = function() {
-            var img = this.getElementsByTagName("div");
-            img[0].style.WebkitFilter = "blur(20px)";
-            img[0].style.filter = "blur(20px)";
-            img[1].style.display = 'block';
-        }
-        slides[i].onmouseout = function() {
-            var img = this.getElementsByTagName("div");
-            img[0].style.WebkitFilter = "blur(0px)";
-            img[0].style.filter = "blur(0px)";
-            img[1].style.display = 'none';
-        }
-    }
 }
 addLoadEvent(slide_top);
-addLoadEvent(onmouseactive);
