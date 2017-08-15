@@ -11,8 +11,10 @@ body {
     margin: 0;
 }
 
+
+/*header*/
+
 header {
-    height: 100vh;
     width: 100%;
 }
 
@@ -44,9 +46,10 @@ header .navbar-default .navbar-nav>li>a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    color: #B0B0B0;
+    color: #D0D0D0;
     margin: 0 20px;
     border-bottom: none;
+    font-size: 20px;
 }
 
 .top_nav_collapse ul.nav li a:hover {
@@ -71,10 +74,13 @@ header .navbar-default .navbar-nav>li>a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    color: #B0B0B0;
+    color: #D0D0D0;
     height: 100%;
     padding: 5px 15px;
     font-size: 25px;
+}
+
+.top_nav_collapse #head:hover {
     color: white;
 }
 
@@ -120,14 +126,6 @@ header .navbar-nav>li {
     height: auto;
 }
 
-.down-arrow {
-    position: absolute;
-    width: 43px;
-    height: 28px;
-    left: 47.5%;
-    bottom: 20px;
-}
-
 .carousel-caption {
     vertical-align: middle;
     top: 35%;
@@ -149,11 +147,6 @@ header .navbar-nav>li {
     opacity: 0.5;
 }
 
-#slide {
-    height: 28px;
-    width: 43px;
-}
-
 #about {
     position: relative;
     width: 100%;
@@ -162,7 +155,7 @@ header .navbar-nav>li {
 #active {
     position: relative;
     width: 100%;
-    background-color: #0dc5a0;
+    background: url(../picture/bg.png);
 }
 
 #contact {
@@ -181,31 +174,23 @@ header .navbar-nav>li {
     font-size: 15px;
 }
 
-.next {
-    background: url(../picture/index-next.jpg);
-    height: 27px;
-    left: 50%;
-    margin-left: -40px;
-    position: absolute;
-    top: 0px;
-    width: 80px;
-}
-
 .index_text {
     text-align: center;
     line-height: 30px;
     margin-top: 0px;
     padding-top: 40px;
-    margin-bottom: -20px;
     font-family: arial, "微软雅黑", "Microsoft YaHei";
+}
+
+#about .index_text h1 {
+    margin-bottom: 30px;
 }
 
 #active .index_text {
     text-align: center;
     line-height: 30px;
-    padding-top: 80px;
-    margin-bottom: -20px;
-    color: white;
+    padding-top: 50px;
+    color: black;
 }
 
 
@@ -218,50 +203,51 @@ header .navbar-nav>li {
 }
 
 .text_center {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 40px;
     letter-spacing: 1px;
 }
 
 .intro {
-    margin: 100px 150px 100px 160px;
+    margin: 80px 100px 80px 160px;
+    font-size: 13px;
 }
 
 #嵌入式 {
     background-color: #3498db;
-    height: 35px;
-    margin-top: 20px;
     box-shadow: 1px 1px 8px #888888;
     border-radius: 3px;
     color: white;
+    padding: 5px;
+    margin-top: 15px;
 }
 
 #大数据 {
     background-color: #7e57c2;
-    height: 35px;
-    margin-top: 20px;
+    margin-top: 30px;
     box-shadow: 1px 1px 8px #888888;
     border-radius: 3px;
     color: white;
+    padding: 5px;
 }
 
 #android {
     background-color: #0dc5a0;
-    height: 35px;
-    margin-top: 20px;
+    margin-top: 30px;
     box-shadow: 1px 1px 8px #888888;
     border-radius: 3px;
     color: white;
+    padding: 5px;
 }
 
 #web {
     background-color: #FF6600;
-    height: 35px;
-    margin-top: 20px;
+    margin-top: 30px;
     box-shadow: 1px 1px 8px #888888;
     border-radius: 3px;
     color: white;
+    padding: 5px;
 }
 
 #嵌入式1,
@@ -274,7 +260,7 @@ header .navbar-nav>li {
 }
 
 .img1 {
-    padding: 40px;
+    padding: 40px 30px 40px 20px;
 }
 
 #嵌入式1 {
@@ -371,12 +357,12 @@ header .navbar-nav>li {
 }
 
 .main li,
-a {
+.main a {
     color: black;
 }
 
 .main li:hover,
-a:hover {
+.main a:hover {
     font-weight: 600;
     font-size: 15px;
     color: black;
@@ -427,10 +413,6 @@ a:hover {
 #contact .row input {
     border-radius: 2px;
     margin: 2vh 9vh 2vh 0;
-}
-
-.contact_qa {
-    padding-left: 15vh;
 }
 
 #contact #target a {
@@ -526,7 +508,11 @@ a:hover {
 
 @media screen and (max-width:768px) {
     .carousel .item img {
-        height: 300px;
+        height: 400px;
+        width: auto;
+    }
+    .carousel .item {
+        height: 400px;
     }
     .carousel-caption h1 {
         font-size: 14px;
@@ -535,15 +521,15 @@ a:hover {
         font-size: 14px;
     }
     .carousel-caption {
-        top: 10%;
+        top: 30%;
         font-size: 14px;
     }
     .carousel-control.right {
-        height: 300px;
+        height: 400px;
         margin: 0;
     }
     .carousel-control.left {
-        height: 300px;
+        height: 400px;
         margin: 0;
     }
     #head {
@@ -567,5 +553,32 @@ a:hover {
     }
     .footer .row .con {
         margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #github {
+        margin: 40px 0px 40px 50px;
+    }
+    #salon {
+        margin: 40px 50px;
+    }
+    #project {
+        margin: 40px 35px 40px 50px;
+    }
+    #contact .row {
+        margin: 5vh 3vh 5vh 0vh;
+    }
+    .intro {
+        padding: 50px 20px;
+    }
+    .img1 {
+        padding: 40px 0px;
+    }
+}
+
+@media screen and (max-width:366px) {
+    #head {
+        font-size: 20px;
     }
 }

@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, '微软雅黑';
+}
+
+.row {
+    margin: 0;
+}
+
+
+/*header*/
+
+header {
+    width: 100%;
+    height: 62px;
+}
+
+header .navbar-default .navbar-brand {
+    font-family: 'Ruda', sans-serif;
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+header .navbar-default .navbar-nav>li>a {
+    font-family: "Lato", "Heiti SC", "Hiragino Sans GB", "STHeiti", "Source Han Sans CN", "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", "微软雅黑", sans-serif;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    display: block;
+    padding: 10px 0;
+    line-height: 20px;
+    margin: 10px 20px;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.top_nav_collapse {
+    background-color: #323436;
+}
+
+.top_nav_collapse ul.nav li a {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #D0D0D0;
+    margin: 0 20px;
+    border-bottom: none;
+    font-size: 20px;
+}
+
+.top_nav_collapse ul.nav li a:hover {
+    color: white;
+    border-bottom: none;
+}
+
+.top_nav_collapse ul.nav #in a:hover {
+    color: white;
+    border-bottom: none;
+}
+
+.top_nav_collapse ul.nav #in {
+    background-color: #686868;
+}
+
+.top_nav_collapse ul.nav #in a {
+    border-bottom: none;
+}
+
+.top_nav_collapse #head {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    color: #D0D0D0;
+    height: 100%;
+    padding: 5px 15px;
+    font-size: 25px;
+}
+
+.top_nav_collapse #head:hover {
+    color: white;
+}
+
+.top_nav_collapse {
+    min-height: 0px;
+}
+
+#in {
+    background-color: #E0E0E0;
+}
+
+#in>a {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+#in a:hover {
+    color: #0dc5a0;
+    border-bottom: 1px solid #0dc5a0;
+}
+
+.navbar .navbar-nav>li>a:hover {
+    color: #0dc5a0;
+    border-bottom: 1px solid #0dc5a0;
+}
+
+header .navbar {
+    margin-bottom: 0px;
+}
+
+header .navbar-brand {
+    line-height: 30px;
+}
+
+header .navbar-nav>li {
+    line-height: 30px;
+}
+
+.navbar-fixed-top {
+    border-width: 0 0 1px 0;
+}
+
+#top {
+    display: none;
+    padding-top: 10px;
+    right: 20px;
+    bottom: 15px;
+    position: fixed;
+    color: #bfbfbf;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.footer {
+    padding: 3vh 0vh;
+    width: 100%;
+    background-color: #323436;
+    color: #B0B0B0;
+    font-size: 13px;
+}
+
+.footer a {
+    color: #D0D0D0;
+}
+
+.footer a:hover {
+    color: #0dc5a0;
+}
+
+.footer .footer_last {
+    text-align: center;
+    margin: 3vh auto;
+}
+
+#qq {
+    background: url(../picture/qq.png);
+}
+
+#qq img,
+#微信 img {
+    height: 70px;
+    width: 70px;
+    margin-top: 5vh;
+    display: none;
+}
+
+#qq:hover img,
+#微信:hover img {
+    display: block;
+    z-index: 9999;
+    position: absolute;
+}
+
+#微信 {
+    background: url(../picture/微信.png);
+}
+
+#footer-github {
+    background: url(../picture/github.png);
+}
+
+#net ul {
+    list-style-type: none;
+    margin-top: 2vh;
+}
+
+#net {
+    margin: 0;
+}
+
+#net li {
+    margin: 0 1vh;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+}
+
+
+/*只在小屏幕显示*/
+
+@media screen and (max-width:768px) {
+    #head {
+        font-size: 25px;
+    }
+    .footer .row #net {
+        margin-left: 30px;
+    }
+    .footer .row .con {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:366px) {
+    #head {
+        font-size: 20px;
+    }
+}

@@ -1,3 +1,15 @@
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            oldonload();
+            func();
+        }
+    }
+}
+
 function slide_top() {
     if (!document.getElementById)
         return false;
@@ -8,7 +20,7 @@ function slide_top() {
     tops.onclick = function() {
         timer = setInterval(function() {
             var top = document.documentElement.scrollTop = document.body.scrollTop;
-            var speed = top / 6;
+            var speed = top / 4;
             document.documentElement.scrollTop = document.body.scrollTop = top - speed;
             if (document.documentElement.scrollTop = document.body.scrollTop == 0) {
                 timer = clearInterval(timer);
@@ -21,10 +33,18 @@ function addclass(element, value) {
     if (!element.className) {
         element.className = value;
     } else {
-        var newClassName = element.className;
-        newClassName += " ";
-        newClassName += value;
-        element.className = newClassName;
+        var allclassname = element.className.split(" ");
+        for (var i = 0; i < allclassname.length; i++) {
+            if (allclassname[i] == value) {
+                break;
+            }
+        }
+        if (i == allclassname.length) {
+            var newClassName = element.className;
+            newClassName += " ";
+            newClassName += value;
+            element.className = newClassName;
+        }
     }
 }
 
@@ -52,20 +72,23 @@ function removeclass(element, value) {
     }
 }
 
-window.onscroll = function() {
-    topScroll = document.body.scrollTop; //滚动的距离,距离顶部的距离
+function onscroll_a() {
     var index_nav = document.getElementById("index_nav");
-    if (topScroll >= 30) {
-        addclass(index_nav, "top_nav_collapse");
-    } else {
-        removeclass(index_nav, "top_nav_collapse");
-    }
     var top = document.getElementById("top");
-    if (topScroll != 0) {
-        top.style.display = 'block';
-    } else {
-        top.style.display = 'none';
-    }
 
+    window.onscroll = function() {
+        if (document.body.scrollTop >= 30) {
+            addclass(index_nav, "top_nav_collapse");
+        } else {
+            removeclass(index_nav, "top_nav_collapse");
+        }
+        if (document.body.scrollTop != 0) {
+            top.style.display = 'block';
+        } else {
+            top.style.display = 'none';
+        }
+    };
 }
+
 addLoadEvent(slide_top);
+addLoadEvent(onscroll_a);
