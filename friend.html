@@ -8,70 +8,193 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <link href="css/bootstrap.min.css" rel=stylesheet>
-    <link href="css/style.css" rel="stylesheet" </head>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/friend.css" rel="stylesheet">
 
-    <body>
-        <header>
-            <div id="index_nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+</head>
+
+<body>
+    <header>
+        <div id="index_nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                         <span class="sr-only">Toggle Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                        <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
-                        <a id="head" href="example1.html" class="navbar-brand">ThoughtCoding实验室</a>
-                    </div>
-                    <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
-                    <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">主页</a></li>
-                            <li><a href="active.html">动态</a></li>
-                            <li><a href="project.html">项目</a></li>
-                            <li><a href="about.html">关于</a></li>
-                            <li id="in"><a href="friend.html">校友录</a></li>
-                            <li><a href="contact.html">加入我们</a></li>
-                        </ul>
-                    </div>
+                    <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+                    <a id="head" href="example1.html" class="navbar-brand">ThoughtCoding实验室</a>
                 </div>
-            </div>
-        </header>
-
-        <!--footer-->
-        <div class="footer">
-            <div class="row">
-                <div class="col-xs-1 col-md-1"></div>
-                <div class="col-xs-11 col-md-4">
-                    <p><img src="picture/地址.png"> 地址：陕西省西安市长安区西安邮电大学东区FZ332</p>
-                    <p><img src="picture/邮箱.png"> 邮箱：ThoughtCoding@163.com</p>
+                <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">主页</a></li>
+                        <li><a href="active.html">动态</a></li>
+                        <li><a href="project.html">项目</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li id="in"><a href="friend.html">校友录</a></li>
+                        <li><a href="contact.html">加入我们</a></li>
+                    </ul>
                 </div>
-                <div class="col-xs-10 col-md-2">
-                    <div id="net">
-                        社交网络
-                        <ul>
-                            <li id="qq"><img src="picture/qq码.png"></li>
-                            <li id="微信"><img src="picture/微信码.png"></li>
-                            <li id="footer-github"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-11 col-md-5 con">
-                    <p>内容许可：本站由&nbsp;<a rel="license" target="_blank" href="http://cloud.xupt.edu.cn"><span>西安邮电大学计算机学院</span></a> &nbsp;提供服务器支持，由&nbsp;
-                        <a rel="license" target="_blank" href="http://cdn.code.baidu.com"><span>百度</span></a> &nbsp;提供CDN加速服务。 如未特别声明，本站所有内容均遵循
-                        <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/cn/"><span>CC-BY-SA 3.0协议（署名-相同方式共享）进行许可</span></a>
-                    </p>
-                </div>
-            </div>
-            <div class="footer_last">
-                <p>Copyright © 2017 ThoughtCoding实验室 All Rights Reserved | 陕ICP备040096号 | version:2015b1</p>
             </div>
         </div>
-        <a id="top"><img src="picture/index-top.jpg"><br>TOP</a>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/index.js"></script>
-    </body>
+    </header>
+    <div class="nav_pic">
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-3 col-md-3" id="myScrollspy">
+                <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="155">
+                    <li><a href="#section-1">2013届</a></li>
+                    <li><a href="#section-2">2012届</a></li>
+                    <li><a href="#section-3">2011届</a></li>
+                    <li><a href="#section-4">2010届</a></li>
+                    <li><a href="#section-5">2009届</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-9 col-md-9">
+                <span id="section-1"></span>
+                <h2>2013届</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+                <hr>
+                <span id="section-2"></span>
+                <h2>2012届</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+                <hr>
+                <span id="section-3"></span>
+                <h2>2011届</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+                <hr>
+                <span id="section-4"></span>
+                <h2>2010届</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+                <span id="section-5"></span>
+                <h2>2009届</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 name" style="background-image:url(picture/name.jpg)">
+                    </div>
+                    <div class="col-xs-12 col-md-8 info">
+                        <p>姓名</p>
+                        <p>工作</p>
+                        <p>寄语</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+        <div class="row">
+            <div class="col-xs-1 col-md-1"></div>
+            <div class="col-xs-11 col-md-4">
+                <p><img src="picture/地址.png"> 地址：陕西省西安市长安区西安邮电大学东区FZ332</p>
+                <p><img src="picture/邮箱.png"> 邮箱：ThoughtCoding@163.com</p>
+            </div>
+            <div class="col-xs-10 col-md-2">
+                <div id="net">
+                    社交网络
+                    <ul>
+                        <li id="qq"><img src="picture/qq码.png"></li>
+                        <li id="微信"><img src="picture/微信码.png"></li>
+                        <li id="footer-github"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-11 col-md-5 con">
+                <p>内容许可：本站由&nbsp;<a rel="license" target="_blank" href="http://cloud.xupt.edu.cn"><span>西安邮电大学计算机学院</span></a> &nbsp;提供服务器支持，由&nbsp;
+                    <a rel="license" target="_blank" href="http://cdn.code.baidu.com"><span>百度</span></a> &nbsp;提供CDN加速服务。 如未特别声明，本站所有内容均遵循
+                    <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/3.0/cn/"><span>CC-BY-SA 3.0协议（署名-相同方式共享）进行许可</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="footer_last">
+            <p>Copyright © 2017 ThoughtCoding实验室 All Rights Reserved | 陕ICP备040096号 | version:2015b1</p>
+        </div>
+    </div>
+    <a id="top"><img src="picture/index-top.jpg"><br>TOP</a>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
 
 </html>
