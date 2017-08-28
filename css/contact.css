@@ -1,0 +1,28 @@
+body {
+    /*background-color: #f8f8f8;*/
+    background-image: url(../picture/bg.png);
+}
+
+.con_head {
+    width: 180px;
+    text-align: center;
+    margin: 90px auto 40px auto;
+    font-size: 40px;
+    font-weight: 500;
+    border-bottom: 3px solid #0dc5a0;
+}
+
+.con_1 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.con-2 {
+    padding: 80px 0 0 250px;
+}
+
+@media screen and (max-width:768px) {
+    .con-2 {
+        padding: 80px 0 0 50px;
+    }
+}
