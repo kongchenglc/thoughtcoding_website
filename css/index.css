@@ -166,6 +166,7 @@ header .navbar-nav>li {
 #top {
     display: none;
     padding-top: 10px;
+    z-index: 9999;
     right: 20px;
     bottom: 15px;
     position: fixed;
