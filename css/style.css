@@ -206,6 +206,9 @@ header .navbar-nav>li {
     #head {
         font-size: 25px;
     }
+    header .navbar-default .navbar-nav>li>a {
+        margin: 10px 10px;
+    }
     .footer .row #net {
         margin-left: 30px;
     }
@@ -217,5 +220,14 @@ header .navbar-nav>li {
 @media screen and (max-width:366px) {
     #head {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width:366px) {
+    .top_nav_collapse #head {
+        font-size: 22px;
+    }
+    #head {
+        font-size: 22px;
     }
 }

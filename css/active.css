@@ -1,7 +1,10 @@
 .nav_pic {
-    background-image: url(../picture/active.jpg);
     width: 100%;
-    height: 250px;
+    height: auto;
+}
+
+.nav_pic img {
+    width: 100%;
 }
 
 body {

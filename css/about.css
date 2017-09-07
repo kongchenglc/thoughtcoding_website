@@ -4,9 +4,12 @@ body {
 }
 
 .nav_pic {
-    background-image: url(../picture/about-0.jpg);
     width: 100%;
-    height: 250px;
+    height: auto;
+}
+
+.nav_pic img {
+    width: 100%;
 }
 
 .main .row {
