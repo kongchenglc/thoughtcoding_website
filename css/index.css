@@ -429,6 +429,10 @@ header .navbar-nav>li {
     top: -1vh;
 }
 
+#contact .contact_qa {
+    padding-left: 100px;
+}
+
 #爱心 {
     right: 3vh;
 }
@@ -499,6 +503,12 @@ header .navbar-nav>li {
 
 
 /*只在小屏幕显示*/
+
+@media screen and (max-width:983px) {
+    #contact .contact_qa {
+        padding-left: 15px;
+    }
+}
 
 @media screen and (max-width:768px) {
     .carousel .item img {

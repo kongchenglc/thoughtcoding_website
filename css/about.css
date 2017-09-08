@@ -24,6 +24,23 @@ body {
     background-color: white;
 }
 
+.main .row h4 {
+    font-weight: 500;
+    margin-top: -20px;
+    transition: 0.2s;
+    -moz-transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+.main .main_1:hover>h4 {
+    font-weight: 600;
+}
+
+.img {
+    width: auto;
+}
+
 .main {
     position: relative;
 }
