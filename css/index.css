@@ -152,12 +152,6 @@ header .navbar-nav>li {
     width: 100%;
 }
 
-#active {
-    position: relative;
-    width: 100%;
-    background: url(../picture/bg.png);
-}
-
 #contact {
     width: 100%;
     position: relative;
@@ -166,6 +160,7 @@ header .navbar-nav>li {
 #top {
     display: none;
     padding-top: 10px;
+    z-index: 9999;
     right: 20px;
     bottom: 15px;
     position: fixed;
@@ -435,6 +430,10 @@ header .navbar-nav>li {
     top: -1vh;
 }
 
+#contact .contact_qa {
+    padding-left: 100px;
+}
+
 #爱心 {
     right: 3vh;
 }
@@ -506,6 +505,12 @@ header .navbar-nav>li {
 
 /*只在小屏幕显示*/
 
+@media screen and (max-width:983px) {
+    #contact .contact_qa {
+        padding-left: 15px;
+    }
+}
+
 @media screen and (max-width:768px) {
     .carousel .item img {
         height: 400px;
@@ -554,6 +559,9 @@ header .navbar-nav>li {
     .footer .row .con {
         margin-left: 30px;
     }
+    header .navbar-default .navbar-nav>li>a {
+        margin: 10px 10px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -578,7 +586,10 @@ header .navbar-nav>li {
 }
 
 @media screen and (max-width:366px) {
+    .top_nav_collapse #head {
+        font-size: 22px;
+    }
     #head {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
