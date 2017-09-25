@@ -6,6 +6,7 @@ body {
 .nav_pic {
     width: 100%;
     height: auto;
+    background-image: url(../picture/about-0.jpg);
 }
 
 .nav_pic img {

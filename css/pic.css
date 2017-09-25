@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 12px/1.5em Arial, Tahoma, Helvetica, snas-serif;
+}
+
+#pic.main {
+    margin: 15px auto;
+    width: 760px;
+}
+
+#pic ul {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    height: 305px;
+    z-index: 99;
+}
+
+#load {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+#pic .black,
+#pic .black-1,
+#pic .black-2,
+#pic .black-3 {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0.5;
+    z-index: 100;
+}
+
+#pic .black {
+    top: 1px;
+}
+
+#pic .black-1 {
+    top: 77px;
+}
+
+#pic .black-2 {
+    top: 153px;
+}
+
+#pic .black-3 {
+    top: 229px;
+}
+
+#pic li {
+    display: inline;
+    list-style: none;
+    float: left;
+    margin: 1px 1px 0px 0px;
+    height: 75px;
+    width: 75px;
+}
+
+#pic .you {
+    width: 151px;
+    height: 151px;
+}
+
+#pic .all>img {
+    width: 75px;
+    height: 75px;
+    /* z-index: 100; */
+}
+
+#pic .all {
+    display: inline-block;
+}
+
+#pic .content {
+    visibility: hidden;
+    background-color: #4bae41;
+    transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -webkit-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    -moz-box-shadow: 0 0 10px #000000;
+    -webkit-box-shadow: 0 0 10px #000000;
+    box-shadow: 0 0 10px #000000;
+    position: absolute;
+    width: 200px;
+    z-index: 999;
+}
+
+#pic .all strong {
+    color: #FFFFFF;
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 0px 10px;
+    margin-top: 8px;
+    white-space: nowrap;
+}
+
+#pic .text {
+    display: inline-block;
+}
+
+#pic .content img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#pic .all span {
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0px 10px;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+#pic li:hover .content {
+    visibility: visible;
+    z-index: 999;
+    width: 300px;
+    top: 1px;
+}
+
+#pic li:hover .col-2 {
+    top: 77px;
+}
+
+#pic li:hover .col-3 {
+    top: 153px;
+}
+
+#pic li:hover .col-4 {
+    top: 200px;
+}
+
+#pic .right-1 .text,
+#pic .right-2 .text,
+#pic .right-3 .text,
+#pic .right-1>img,
+#pic .right-2>img,
+#pic .right-3>img {
+    float: right;
+    margin-bottom: 2px;
+    margin-right: 2px;
+}
+
+#pic li:hover .right-1 {
+    right: 153px;
+}
+
+#pic li:hover .right-2 {
+    right: 77px;
+}
+
+#pic li:hover .right-3 {
+    right: 1px;
+}
+
+#pic li:hover .content>img {
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: -3px;
+}
+
+#pic .you {
+    float: right;
+}
+
+#pic .you img {
+    height: 150px;
+    width: 150px;
+}
