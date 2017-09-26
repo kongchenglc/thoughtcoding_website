@@ -8,7 +8,8 @@ body {
 }
 
 #pic.main {
-    margin: 15px auto;
+    margin: 0px auto;
+    padding-top: 10px;
     width: 760px;
 }
 
