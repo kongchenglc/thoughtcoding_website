@@ -6,6 +6,8 @@ body {
 .nav_pic {
     width: 100%;
     height: auto;
+    background-image: url(../img/friend-bg4.jpg);
+    /* background-color: black; */
 }
 
 .nav_pic img {
@@ -54,7 +56,7 @@ ul.nav-tabs li:last-child a {
 }
 
 ul.nav-tabs.affix {
-    top: 100px;
+    top: 200px;
     /* Set the top position of pinned element */
 }
 

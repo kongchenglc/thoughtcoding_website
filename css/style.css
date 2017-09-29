@@ -217,6 +217,18 @@ header .navbar-nav>li {
     }
 }
 
+@media screen and (max-width:991px) {
+    header {
+        height: 110px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        height: 51px;
+    }
+}
+
 @media screen and (max-width:366px) {
     #head {
         font-size: 20px;
