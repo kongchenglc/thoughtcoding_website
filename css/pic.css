@@ -88,7 +88,7 @@ body {
     -webkit-box-shadow: 0 0 10px #000000;
     box-shadow: 0 0 10px #000000;
     position: absolute;
-    width: 200px;
+    width: 258px;
     z-index: 999;
 }
 
@@ -123,9 +123,9 @@ body {
 }
 
 #pic li:hover .content {
+    width: 300px;
     visibility: visible;
     z-index: 999;
-    width: 300px;
     top: 1px;
 }
 
@@ -167,7 +167,7 @@ body {
 #pic li:hover .content>img {
     margin-top: 2px;
     margin-left: 2px;
-    margin-bottom: -3px;
+    margin-bottom: 2px;
 }
 
 #pic .you {
